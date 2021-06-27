@@ -1,0 +1,82 @@
+mixin footer()
+  h1.footer__title.container Свяжитесь с нами
+  .row.container
+    .col-12.col-lg-8.footer__left__side
+      .footer__item
+        p.footer__item__title — Телефоны
+        .row   
+          .col-4.footer__item__side
+            a(href="tel:+380442299453").footer__link +38 044 229 94 53
+            a(href="tel:+380442299453").footer__link +38 044 229 94 53
+          .col-4.footer__item__side
+            a(href="tel:+380442299453").footer__link +38 044 229 94 53
+            a(href="tel:+380442299453").footer__link +38 044 229 94 53
+      .footer__item
+        p.footer__item__title — EMAIl
+          .row
+            .col-4.footer__item__side
+              a(href="mailti:info@prytec.com.ua").footer__link info@prytec.com.ua
+      .footer__item
+        p.footer__item__title — Наши сайты
+        .row   
+          .col-4.footer__item__side
+            a(href="https://paperpump.com.ua").footer__link paperpump.com.ua
+            a(href="https://boerger.com.ua").footer__link boerger.com.ua
+          .col-4.footer__item__side
+            a(href="https://vacuumpump.com.ua").footer__link vacuumpump.com.ua
+            a(href="https://sugarpump.com.ua").footer__link sugarpump.com.ua
+      .footer__item
+        p.footer__item__title — АДРЕС
+          .row
+            .col-12.footer__item__side
+              a(href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0+%D0%A2%D1%83%D0%BF%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0,+8,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+03062/@50.4619851,30.394536,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cd3fc9d99c41:0xe41e32fc536a4110!8m2!3d50.4619817!4d30.3967247").footer__link Украина, 03062 г. Киев, ул. Туполева 8 оф. 22
+    .col-12.col-lg-4.footer__right__side
+      form.footer__form(action="handler.php") 
+        label(for="name").footer__item__title Полное имя 
+        input(type="text" id="name" placeholder="Андрей Иванович Чернов").footer__form__input
+        label(for="name").footer__item__title Email
+        input(type="text" id="name" placeholder="Андрей@gmail.com").footer__form__input
+        label(for="name").footer__item__title Teлефон
+        input(type="text" id="name" placeholder="096 453 45 11").footer__form__input
+        .footer__checkbox__item
+          input(type="checkbox", name="").footer__checkbox.icon
+          p.footer__checkbox__p НАСОС
+        .footer__checkbox__item
+          input(type="checkbox", name="").footer__checkbox.icon
+          p.footer__checkbox__p Измельчитель
+        .footer__checkbox__item
+          input(type="checkbox", name="").footer__checkbox.icon
+          p.footer__checkbox__p Комплектующие
+        label(for="name").footer__item__title.mt-1 СОобщение
+        textarea(name="", cols="30", rows="10" placeholder="Напишите что-нибудь...").footer__form__input
+        button(type="submit").footer__form__btn Отправить
+  .footer__nav
+    +footer__nav('home')
+
+mixin footer__link(page, link, text)
+  li 
+    if page === link
+      a(href="#!").footer__nav__link.current= text 
+    else
+      a(href="pages" + "/"+link+".html").footer__nav__link= text  
+
+mixin footer__nav(page)
+  nav.footer__navbar.container 
+    a(href="#!").footer__nav__logo
+      img(src="images/logo-dark.webp" alt="Sparrow")
+    ul.header__list 
+      each item in [{link: 'service', text:'Сервис'},{link: 'news', text:'Новости'},{link: 'about', text:'О нас'},{link: 'contact', text:'Контакты'},{link: 'privacy', text:'Privacy policy'},{link: 'copyright', text:'Сopyright 2020'},]
+        +footer__link(page, item.link, item.text)  
+    .footer__nav__social
+      a(href="https://facebook.com")
+        i.fab.fa-facebook-square.footer__nav__social__i    
+      a(href="https://linkedin.com")
+        i.fab.fa-linkedin.footer__nav__social__i   
+      a(href="https://youtube.com")
+        i.fab.fa-youtube-square.footer__nav__social__i    
+      a(href="https://instagram.com")
+        i.fab.fa-instagram-square.footer__nav__social__i    
+
+  script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+  script(src="scripts/slick.min.js") 
+  script(src="scripts/index.js") 
