@@ -1015,6 +1015,10 @@ a{
     position: relative;
     justify-content: center;
 
+    @include media(768){
+      flex-direction: column;
+    }
+
     &::before{
       content: '';
       position: absolute;
@@ -1024,11 +1028,21 @@ a{
       width: 80%;
       height: 0.5px;
       background: #BDBDBD;
+
+      @include media(768){
+        width: 93%;
+        left: 0;
+        transform: translateX(0);
+      }
     }
 
     &__img{
       margin-right: 30px;
       border-radius: 6px;
+
+      @include media(768){
+        margin-bottom: 30px;
+      }
     }
 
     &__p{
@@ -1036,7 +1050,7 @@ a{
       font-style: normal;
       font-weight: 900;
       font-size: 30px;
-      line-height: 48px;
+      line-height: 120%;
       color: #000000;
       max-width: 384px;
     }
@@ -1047,6 +1061,16 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 100px;
+
+    @include media(992){
+      justify-content: center;
+    }
+    
+    &__btns{
+      @include media(992){
+        display: none;
+      }
+    }
 
     &__btn{
       background: #F2F2F2;
@@ -1083,6 +1107,10 @@ a{
       background: #A6718F;
       border-radius: 3px;
       padding: 20px 83px;
+
+      @include media(768){
+        padding: 15px 40px;
+      }
     }
   }
 }
