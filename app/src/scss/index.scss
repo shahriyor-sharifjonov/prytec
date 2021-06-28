@@ -62,6 +62,7 @@ a{
       flex-direction: column;
       transform: translateX(100%);
       transition: 0.5s transform;
+      z-index: 1000;
       
       &.open{
         transform: translateX(0);
