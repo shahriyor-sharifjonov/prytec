@@ -930,3 +930,24 @@ a{
     }
   }
 }
+
+//articles
+
+.articles{
+
+  &__title{
+    font-family: 'formular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    color: #4F4F4F;
+    max-width: 869px;
+    margin-top: 50px;
+    margin-bottom: 109px;
+
+    &__span{
+      font-weight: 900;
+    }
+  } 
+}
