@@ -31,6 +31,10 @@ a{
     line-height: 17px;
     margin-left: 14px;
 
+    @include media($lg){
+      margin-left: 0;
+    }
+
     &:hover{
       background: #FFC466;
       color: #333;
@@ -56,8 +60,7 @@ a{
       bottom: 0;
       width: 200px;
       right: 0;
-      background: rgba(78, 94, 255, 0.35);
-      backdrop-filter: blur(5px);
+      background: #fff;
       padding-top: 50px;
       flex-direction: column;
       transform: translateX(100%);
@@ -83,12 +86,14 @@ a{
     @include media($lg){
       margin-bottom: 15px;
       display: block;
+      font-weight: 900;
+      margin-right: 0;
     }
   }
 
   &__button {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: relative;
     border: none;
     outline: none;
@@ -97,6 +102,8 @@ a{
     
     @include media($lg){
       display: block;
+      background: #9E9DCB;
+      border-radius: 3px;
     }
     
     &.open{
@@ -119,18 +126,18 @@ a{
       transition: 0.5s;
       position: absolute;
       content: "";
-      left: 0;
-      width: 100%;
+      left: 7.5px;
+      width: 25px;
       height: 2px;
       background: white;
     }
 
     &::before {
-      top: 20%;
+      top: 30%;
     }
 
     &::after {
-      bottom: 20%;
+      bottom: 30%;
     }
 
     &-line {
