@@ -695,3 +695,47 @@ a{
     }
   }
 }
+.about{
+
+  &__title{
+    max-width: 276px;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  &__item{
+
+    &__with-img{
+      margin-top: -116px;
+
+      h1{
+        margin-left: 300px;
+      }
+
+      img{
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    &__violete{
+      background: #9E9DCB;
+      padding: 40px 48px 61px;
+      z-index: 1;
+
+      p{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: #F2F2F2;
+        opacity: 0.7;
+      }
+    }
+
+    &__title{
+      color: #FFC466;
+    }
+  }
+}
