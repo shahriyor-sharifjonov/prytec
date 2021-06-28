@@ -19,6 +19,7 @@ a{
 .header {
   background: rgba(242, 242, 242, 0.9);
   font-family: 'formular';
+  border-bottom: 1px solid #BDBDBD;
 
   &__btn{
     background: #9E9DCB;
@@ -544,12 +545,124 @@ a{
     }
   }
 }
-.mt-1{
-  margin-top: 14px;
-}
 .icon::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
+}
+
+//service 
+
+.title{
+  font-style: 400;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 120%;
+  color: #4F4F4F;
+  max-width: 360px;
+  font-family: 'Proxima Nova', 'formular';
+  margin-bottom: 61px;
+
+  @include media($lg){
+    font-size: 30px;
+  }
+  @include media($md){
+    font-size: 19px;
+  }
+}
+
+.service{
+  padding-top: 86px;
+  background: url(../images/service-bg.webp) center / cover no-repeat;
+  margin-bottom: -55px;
+  padding-bottom: 100px;
+
+  &__intro{
+
+    &__desc{
+      font-family: 'formular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4F4F4F;
+      opacity: 0.7;
+    }
+
+    &__right__side{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__btn{
+      background: #9E9DCB;
+      border-radius: 3px;
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #FFC466;
+      padding: 16px 61px;
+      margin-top: 114px;
+      transition: 200ms ease-in-out;
+
+      &:hover{
+        background: #FFC466;
+        color: #343358;
+      }
+
+      @include media($lg){
+        margin-bottom: 70px;
+      }
+    }
+  }
+  &__items{
+
+    &__right__side{
+      margin-top: 125px;
+
+      @include media($lg){
+        margin-top: 0;
+      }
+    }
+      
+    &__item{
+      background: linear-gradient(102.89deg, rgba(51, 51, 51, 0.4) 4.01%, rgba(51, 51, 51, 0.4) 4.02%, rgba(51, 51, 51, 0.1) 78.63%);
+      backdrop-filter: blur(8px);
+      border-radius: 6px;
+      max-width: 370px;
+      height: 300px;
+      margin-bottom: 30px;
+      padding: 30px 25px;
+
+      &__title{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #F2F2F2;
+        margin-bottom: 12px;
+      }
+
+      &__desc{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F2F2F2;
+        opacity: 0.7;
+      }
+    }
+  }
 }

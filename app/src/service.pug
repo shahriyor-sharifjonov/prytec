@@ -6,3 +6,32 @@ html(lang="en")
     header.header
       include components/header.pug
       +nav('service')
+    .service 
+      .service__intro.row.container 
+        .col-12.col-lg-5.service__intro__left__side
+          h1.title.service__intro__title Мы предлагаем сервисное обслуживание
+        .col-12.col-lg-6.service__intro__right__side
+          p.service__intro__desc Сократить непредвиденные расходы поможет плановое сервисное обслуживание производственного оборудования. 
+          p.mt-1.service__intro__desc Потому надежность работы и срок эксплуатации  оборудования связаны с его своевременным техническим обслуживанием. Своевременное техническое обслуживание промышленного оборудования дает возможность планировать расходы на его содержание, минимизирует простои оборудования, значительно сокращает потери исходного сырья и готовой продукции.
+          a(href="gallery.html").service__intro__btn Посмотреть каталог
+      .service__items.row.container 
+        .col-12.col-lg-4.service__items__left__side 
+          .service__items__item 
+            h2.service__items__item__title — ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ
+            p.service__items__item__desc Регулярное и планированное, гарантийное и постгарантийное техническое обслуживание значительно продлевает срок эксплуатации насосного и прочего оборудования.
+          .service__items__item 
+            h2.service__items__item__title — РЕМОНТ
+            p.service__items__item__desc Ремонт насосов, мацераторов, промышленных миксеров и прочего промышленного оборудования в максимально сжатые сроки. В случае необходимости , организовываем приезд специалист с завода - производителя.
+        .col-12.col-lg-4.service__items__right__side 
+          .service__items__item 
+            h2.service__items__item__title — АГРЕГАТИРОВАНИЕ
+            p.service__items__item__desc Агрегатирование насосов европейского происхождения отечественными двигателями или двигателями, находящимися на наших складах, значительно уменьшает стоимость импортного оборудования. По вашему запросу делаем предварительный расчет.
+          .service__items__item 
+            h2.service__items__item__title — КОМПЛЕКТУЮЩИЕ
+            p.service__items__item__desc Наличие комплектующих к насосному оборудованию всегда на нашем складе делает возможным его ремонт или сервисное обслуживание в максимально короткие сроки. Только оригинальные запчасти к насосам, поставляемые напрямую с завода - производителя.
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
