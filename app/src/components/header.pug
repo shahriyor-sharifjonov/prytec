@@ -3,12 +3,12 @@ mixin link(page, link, text)
     if page === link
       a(href="#!").header__link.current= text 
     else
-      a(href="pages" + "/"+link+".html").header__link= text  
+      a(href="/"+link+".html").header__link= text  
 
 
 mixin nav(page)
   nav.header__nav.container 
-    a(href="")
+    a(href="/")
       img(src="images/logo.webp" alt="Sparrow")
     button.header__button 
       span.header__button-line
