@@ -148,12 +148,21 @@ a{
   }
 
   &__content{
-    margin-top: -4px;
+    margin-top: -5px;
     background: linear-gradient(180deg, #9E9DCB 59.09%, rgba(158, 157, 203, 0) 100%);
+
+    @include media($lg){
+      background: #9E9DCB;
+    }
 
     &__bg{
       max-width: 100%;
       width: 100%;
+
+      @include media($lg){
+        margin-top: 20px;
+        background: linear-gradient(180deg, #9E9DCB 59.09%, rgba(158, 157, 203, 0) 100%);
+      }
     }
 
     &__left__side{
@@ -168,6 +177,12 @@ a{
         opacity: 0.7;
         margin-top: 72px;
         margin-bottom: 40px;
+
+        @include media($md){
+          font-size: 14px;
+          margin-top: 100px;
+          margin-bottom: 50px;
+        }
       }
 
       &__btn{
@@ -194,6 +209,7 @@ a{
     }
 
     &__right__side{
+      order: -1;
 
       &__p{
         font-family: 'Proxima Nova', 'formular';
@@ -203,6 +219,18 @@ a{
         line-height: 120%;
         color: #FFC466;
         margin-top: 45px;
+
+        @include media($lg){
+          font-size: 40px;
+        }
+
+        @include media($md){
+          font-size: 30px;
+        }
+
+        @include media($sm){
+          font-size: 19px;
+        }
       }
     }
   }
@@ -216,11 +244,18 @@ a{
     font-style: 400;
     font-weight: 900;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 120%;
     color: #4F4F4F;
     max-width: 360px;
     font-family: 'Proxima Nova', 'formular';
     margin-bottom: 61px;
+
+    @include media($lg){
+      font-size: 30px;
+    }
+    @include media($md){
+      font-size: 19px;
+    }
   }
 
   &__inner{
@@ -239,6 +274,25 @@ a{
   background: #9E9DCB;
   z-index: 1;
   font-family: 'formular', sans-serif;
+
+  &__list{
+    list-style: none;
+    display: flex;
+
+    
+    @include media($xl){
+      padding-bottom: 77px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__right__side{
+
+    @include media($lg){
+      order: -1;
+      margin-bottom: 100px;
+    }
+  }
 
   &__els{
     display: flex;
@@ -272,6 +326,14 @@ a{
     line-height: 120%;
     color: #FFC466;
     padding-bottom: 29px;
+
+    @include media($lg){
+      font-size: 40px;
+    }
+    @include media($md){
+      font-size: 30px;
+      margin-bottom: 21px;
+    }
   }
 
   &__item{
@@ -417,12 +479,34 @@ a{
     align-items: center;
     padding: 14px 0;
     margin-top: 29px;
+    
+    @include media($xl){
+      display: flex;
+      flex-direction: column;
+      padding-top: 0px;
+      padding-left: 15px;
+    }
   }
 
   &__nav{
     background: #FFC466;
 
+    &__logo{
+
+      @include media($xl){
+        display: none;
+      }
+    }
+
+
     &__social{
+      
+
+      @include media($lg){
+        a:first-of-type{
+          display: none;
+        }
+      }
 
       &__i{
         font-size: 24px;
@@ -444,6 +528,11 @@ a{
       line-height: 17px;
       color: #4F4F4F;
       margin-right: 32px;
+
+      @include media($xl){
+        padding-top: 30px;
+        display: block;
+      }
     }
   }
 }

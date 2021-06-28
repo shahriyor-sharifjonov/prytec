@@ -15,4 +15,4 @@ mixin nav(page)
     ul.header__list 
       each item in [{link: 'gallery', text:'Каталог'},{link: 'service', text:'Сервис'},{link: 'articles', text:'Статьи'},{link: 'about', text:'О нас'}]
         +link(page, item.link, item.text) 
-    a(href="pages/contact.html").header__btn Контакты
+      a(href="pages/contact.html").header__btn Контакты

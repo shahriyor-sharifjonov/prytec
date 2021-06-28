@@ -26,6 +26,28 @@ $('.slider__inner ').slick({
   slidesToShow: 6,
   slidesToScroll: 1,
   arrows: false,
-  speed: 500
+  speed: 500,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '20px',
+      }
+    },
+  ]
 });
 

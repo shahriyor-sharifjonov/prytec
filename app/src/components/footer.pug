@@ -5,10 +5,10 @@ mixin footer()
       .footer__item
         p.footer__item__title — Телефоны
         .row   
-          .col-4.footer__item__side
+          .col-12.col-lg-6.footer__item__side
             a(href="tel:+380442299453").footer__link +38 044 229 94 53
             a(href="tel:+380442299453").footer__link +38 044 229 94 53
-          .col-4.footer__item__side
+          .col-12.col-lg-6.footer__item__side
             a(href="tel:+380442299453").footer__link +38 044 229 94 53
             a(href="tel:+380442299453").footer__link +38 044 229 94 53
       .footer__item
@@ -19,10 +19,10 @@ mixin footer()
       .footer__item
         p.footer__item__title — Наши сайты
         .row   
-          .col-4.footer__item__side
+          .col-12.col-lg-4.footer__item__side
             a(href="https://paperpump.com.ua").footer__link paperpump.com.ua
             a(href="https://boerger.com.ua").footer__link boerger.com.ua
-          .col-4.footer__item__side
+          .col-12.col-lg-4.footer__item__side
             a(href="https://vacuumpump.com.ua").footer__link vacuumpump.com.ua
             a(href="https://sugarpump.com.ua").footer__link sugarpump.com.ua
       .footer__item
@@ -64,7 +64,7 @@ mixin footer__nav(page)
   nav.footer__navbar.container 
     a(href="#!").footer__nav__logo
       img(src="images/logo-dark.webp" alt="Sparrow")
-    ul.header__list 
+    ul.footer__list 
       each item in [{link: 'service', text:'Сервис'},{link: 'news', text:'Новости'},{link: 'about', text:'О нас'},{link: 'contact', text:'Контакты'},{link: 'privacy', text:'Privacy policy'},{link: 'copyright', text:'Сopyright 2020'},]
         +footer__link(page, item.link, item.text)  
     .footer__nav__social
