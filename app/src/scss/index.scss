@@ -935,6 +935,10 @@ a{
 
 .articles{
 
+  &__content{
+    margin-bottom: 100px;
+  }
+
   &__title{
     font-family: 'formular';
     font-style: normal;
@@ -950,4 +954,91 @@ a{
       font-weight: 900;
     }
   } 
+
+  &__filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0.5px;
+      height: 90%;
+      background: #BDBDBD;
+    }
+
+    @include media(992){
+      display: none;
+    }
+
+    &__title{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: right;
+      color: #000000;
+      max-width: 230px;
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__link{
+      font-family: 'formular';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 12px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #A6718F;
+      padding: 6px 18px;
+      border: 0.5px solid #A6718F;
+      box-sizing: border-box;
+      border-radius: 3px;
+      margin: 12.5px 0;
+      text-align: right;
+    }
+  }
+
+  &__item{
+    display: flex;
+    padding: 24px 0 30px 0;
+    position: relative;
+    justify-content: center;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      height: 0.5px;
+      background: #BDBDBD;
+    }
+
+    &__img{
+      margin-right: 30px;
+      border-radius: 6px;
+    }
+
+    &__p{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 48px;
+      color: #000000;
+      max-width: 384px;
+    }
+  }
 }

@@ -9,6 +9,42 @@ html(lang="en")
     
     .articles.container
       h1.title.articles__title <span class="articles__title__span">Статьи.</span>Полезные инструкции и новости от Prytec
+      .row 
+        .col-12.col-lg-3.articles__filter 
+          h2.articles__filter__title Поиск по ключевым словам 
+          .articles__filter__list
+            include components/filter.pug
+            +filter__link('Andritz серия ACP')
+            +filter__link('ANDRITZ серия ES')
+            +filter__link('ANDRITZ серия S')
+            +filter__link('Andritz Украина')
+            +filter__link('Андритц Прайтек')
+            +filter__link('Завод Андриц')
+            +filter__link('Закрытое рабочее колесо')
+            +filter__link('Замена запчастей')
+            +filter__link('Запасные части')
+            +filter__link('Запасные части')
+            +filter__link('Импеллер')
+            +filter__link('Механическое уплотнение ')
+            +filter__link('Насос АСР')
+            +filter__link('Насос для бумаги')
+            +filter__link('Насос гидроразбивателя')
+            +filter__link('Насос для водоотделителя')
+            +filter__link('Отрытое рабочее колесо')
+        .col-12.col-lg-9
+          .articles__content 
+            .articles__item 
+              img(src="images/article-1.webp", alt="").articles__item__img
+              p.articles__item__p Рабочее колесо насоса ANDRITZ
+            .articles__item 
+              img(src="images/article-2.webp", alt="").articles__item__img
+              p.articles__item__p Новая информация про центробежные насосы Andrithz
+            .articles__item 
+              img(src="images/article-3.webp", alt="").articles__item__img
+              p.articles__item__p Новая информация про измельчители Boerger
+            .articles__item 
+              img(src="images/article-4.webp", alt="").articles__item__img
+              p.articles__item__p Новая информация про центробежные насосы Andrithz
 
     .footer__els.container
       .footer__els__first
