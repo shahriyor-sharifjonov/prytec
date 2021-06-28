@@ -758,6 +758,28 @@ a{
 
     &__yellow{
       background: #FFC466;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        background: #4F4F4F;
+        width: 10px;
+        height: 50px;
+        right: 80px;
+        bottom: 0;
+        z-index: 1;
+      }
+      &::after{
+        content: '';
+        position: absolute;
+        background: #4F4F4F;
+        width: 10px;
+        height: 50px;
+        right: 100px;
+        bottom: 0;
+        z-index: 1;
+      }
 
       &__p{
         font-family: 'formular';
@@ -871,6 +893,40 @@ a{
 
     &__title{
       color: #FFC466;
+    }
+
+    &-text{
+
+      &:first-child{
+        
+        .about__item-text__p{
+          margin-top: -120px;
+
+          @include media(1200){
+            margin-top: -200px;
+          }
+          @include media(992){
+            margin-top: 25px;
+          }
+        }
+      }
+
+      &__p{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: #4F4F4F;
+        opacity: 0.7;
+        margin-top: 33px;
+        margin-bottom: 200px;
+
+        @include media(992){
+          margin-bottom: 25px;
+          margin-top: 0;
+        }
+      }
     }
   }
 }
