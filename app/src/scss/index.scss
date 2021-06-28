@@ -59,11 +59,11 @@ a{
       top: 0;
       bottom: 0;
       width: 200px;
-      right: 0;
+      left: 0;
       background: #fff;
       padding-top: 50px;
       flex-direction: column;
-      transform: translateX(100%);
+      transform: translateX(-100%);
       transition: 0.5s transform;
       z-index: 1000;
       
