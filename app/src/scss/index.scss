@@ -83,6 +83,27 @@ a{
     transition: 0.5s color;
     margin-right: 36px;
     font-family: 'formular';
+
+    &__df{
+      display: flex;
+      align-items: flex-end;
+
+      @include media($lg){
+        align-items: flex-start;
+      }
+
+      i{
+        margin-right: 8px;
+        color: #4F4F4F;
+        margin-bottom: 1px;
+        margin-top: 0;
+
+        @include media($lg){
+          margin-bottom: 0;
+          margin-top: 3px;
+        }
+      }
+    }
     
     @include media($lg){
       margin-bottom: 15px;
@@ -284,6 +305,14 @@ a{
   z-index: 1;
   font-family: 'formular', sans-serif;
 
+  &__map{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: -5px;
+    border: none;
+    border-top: 1px solid #FFC466;
+  }
+
   &__list{
     list-style: none;
     display: flex;
@@ -430,6 +459,7 @@ a{
       cursor: pointer;
       margin-top: 35px;
       transition: 200ms ease-in-out;
+      margin-bottom: 29px;
 
       &:hover{
         background: #F2F2F2;
@@ -487,7 +517,6 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 14px 0;
-    margin-top: 29px;
     
     @include media($xl){
       display: flex;

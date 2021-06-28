@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Service')
+  body 
+    header.header
+      include components/header.pug
+      +nav('service')
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8786112351454!2d30.39453601589642!3d50.46198509441443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd3fc9d99c41%3A0xe01bafddd1a3f36a!2z0LLRg9C70LjRhtGPINCQ0LrQsNC00LXQvNGW0LrQsCDQotGD0L_QvtC70ZTQstCwLCA4LCAyMiwg0JrQuNGX0LIsINCj0LrRgNCw0LjQvdCwLCAwMzA2Mg!5e0!3m2!1sru!2s!4v1624883000507!5m2!1sru!2s" width="600" height="450" allowfullscreen="" loading="lazy").footer__map
+      .footer__nav
+        +footer__nav('home')
