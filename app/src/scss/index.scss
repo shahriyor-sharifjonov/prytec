@@ -1674,3 +1674,78 @@ a{
     }
   }
 }
+
+.pump__downloads{
+  padding-top: 100px;
+
+  &__title{
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 120%;
+    color: #4F4F4F;
+    margin-bottom: 50px;
+
+    @include media($md){
+      display: none;
+    }
+  }
+
+  &__content{
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 150px;
+
+    &__item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include media($lg){
+        margin: 15px 0;
+      }
+
+      &[class*="col"]{
+        padding: 30px 50px;
+      }
+
+      &__p{
+        font-family: 'Proxima Nova', 'formular';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      &__i{
+        margin-right: 25px;
+      }
+
+      &__yellow{
+        background: #FFC466;
+        color: #4F4F4F;
+      }
+
+      &__red{
+        background: #A6718F;
+        color: #FFC466;
+
+        &[class*="col"]{
+          padding: 40px 50px;
+
+          @include media($lg){
+            padding: 30px 50px;
+          }
+        }
+      }
+
+      &__purple{
+        background: #9E9DCB;
+        color: #FFC466;
+      }
+    }
+  }
+}
