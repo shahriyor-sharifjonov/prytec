@@ -5,10 +5,18 @@ mixin nav(page)
     button.header__button 
       span.header__button-line
     ul.header__list 
-      a(href="#!").header__link__df
+      div.header__link__df
         i.fas.fa-th 
         p.header__link Каталог
+      .gallery__menu 
+        a(href="#!").gallery__menu__link.gallery__menu__yellow Насосное оборудование
+        div 
+          a(href="#!").gallery__menu__link.gallery__menu__purple Измельчители
+          a(href="#!").gallery__menu__link.gallery__menu__red Комплектующие
+            div
+
       a(href="service.html").header__link Сервис
       a(href="articles.html").header__link Статьи
+      a(href="convertor.html").header__link.dn Конвертор
       a(href="about.html").header__link О нас
       a(href="contact.html").header__btn Контакты

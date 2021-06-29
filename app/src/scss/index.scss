@@ -17,9 +17,15 @@ a{
 }
 
 .header {
-  background: rgba(242, 242, 242, 0.9);
+  background: rgb(242, 242, 242);
   font-family: 'formular';
   border-bottom: 1px solid #BDBDBD;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97px;
+  z-index: 100;
 
   &__btn{
     background: #9E9DCB;
@@ -33,7 +39,7 @@ a{
     margin-left: 14px;
 
     @include media($lg){
-      margin-left: 0;
+      display: none;
     }
 
     &:hover{
@@ -48,6 +54,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 9999;
   }
 
   &__list {
@@ -57,16 +64,17 @@ a{
 
     @include media($lg) {
       position: fixed;
-      top: 0;
+      top: 97px;
       bottom: 0;
-      width: 200px;
+      width: 100%;
       left: 0;
       background: #fff;
-      padding-top: 50px;
+      padding-top: 0;
       flex-direction: column;
       transform: translateX(-100%);
       transition: 0.5s transform;
-      z-index: 1000;
+      z-index: 9998;
+      align-items: start;
       
       &.open{
         transform: translateX(0);
@@ -75,7 +83,7 @@ a{
   }
 
   &__link {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.15em;
     text-decoration: none;
@@ -84,12 +92,21 @@ a{
     margin-right: 36px;
     font-family: 'formular';
 
+    &.dn{
+      display: none;
+
+      @include media($lg){
+        display: block;
+      }
+    }
+
     &__df{
       display: flex;
       align-items: flex-end;
+      cursor: pointer;
 
       @include media($lg){
-        align-items: flex-start;
+        display: none;
       }
 
       i{
@@ -106,10 +123,11 @@ a{
     }
     
     @include media($lg){
-      margin-bottom: 15px;
+      margin-bottom: 0px;
       display: block;
       font-weight: 900;
-      margin-right: 0;
+      margin-left: 15px;
+      margin-top: 50px;
     }
   }
 
@@ -175,6 +193,10 @@ a{
   &__img{
     width: 100%;
     object-fit: cover;
+
+    @include media($md){
+      margin-top: 97px;
+    }
   }
 
   &__content{
@@ -266,6 +288,190 @@ a{
   }
 }
 
+.gallery__menu{
+  position: absolute;
+  top: 97px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+
+  &.active{
+    display: flex;
+  }
+
+
+  @include media($lg){
+    position: static;
+    transform: translateX(0);
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  &>div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__yellow{
+    padding: 25px 145px 179px 25px;
+    background: #FFC466;
+    border: 1px solid #FFC466;
+    width: 100%;
+
+    &:hover{
+      color: #A6718F;
+    }
+    &:hover::after{
+      background: #A6718F;
+    }
+
+    @include media($lg){
+      max-width: 100%;
+      padding: 27px 15px;
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 25px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+  }
+
+  &__purple{
+    background: #9E9DCB;
+    padding: 25px 210px 77px 25px;
+    border: 1px solid #9E9DCB;
+    width: 100%;
+
+    &:hover{
+      color: #A6718F;
+    }
+    &:hover::after,
+    &:hover::before{
+      background: #A6718F;
+    }
+
+    @include media($lg){
+      padding: 27px 15px;
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 45px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 25px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+  }
+
+  &__red{
+    background: #A6718F;
+    padding: 25px 210px 77px 25px;
+    border: 1px solid #A6718F;
+    width: 100%;
+
+    &:hover{
+      color: #9E9DCB;
+    }
+    &:hover::after,
+    &:hover::before,
+    &:hover > div{
+      background: #9E9DCB;
+    }
+
+    @include media($lg){
+      padding: 27px 15px;
+    }
+
+    &>div{
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 25px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 65px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 40px;
+      right: 45px;
+      bottom: -1.5px;
+
+      @include media($lg){
+        display: none;
+      }
+    }
+  }
+
+  &__link{
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    position: relative;
+    
+    @include media($lg){
+      font-size: 24px;
+    }
+  }
+}
+
 .slider{
   margin-top: 100px;
   margin-bottom: 100px;
@@ -302,8 +508,8 @@ a{
 
 .footer{
   background: #9E9DCB;
-  z-index: 1;
   font-family: 'formular', sans-serif;
+  z-index: -2;
 
   &__map{
     max-width: 100%;
@@ -341,7 +547,7 @@ a{
       max-width: 800px;
       width: 100%;
       height: 56px;
-      z-index: 1;
+      z-index: -2;
       background: #A6718F;
     }
 
@@ -351,7 +557,7 @@ a{
       height: 29px;
       background: #FFC466;
       margin-left: -200px;
-      z-index: 1;
+      z-index: -1;
     }
   }
 
@@ -551,6 +757,7 @@ a{
         margin-right: 64px;
         color: #333;
         position: relative;
+        z-index: -1;
       }
     }
 
@@ -617,6 +824,11 @@ a{
       line-height: 20px;
       color: #4F4F4F;
       opacity: 0.7;
+      z-index: -1;
+    }
+
+    &__title{
+      margin-top: 97px;
     }
 
     &__right__side{
@@ -706,7 +918,7 @@ a{
   &__title{
     max-width: 276px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 147px;
     margin-left: 20px;
   }
 
@@ -715,6 +927,7 @@ a{
     &__with-img{
       margin-top: -116px;
       position: relative;
+      z-index: -1;
 
       @include media(1400){
         margin-top: -50px;
@@ -759,6 +972,7 @@ a{
     &__yellow{
       background: #FFC466;
       position: relative;
+      z-index: -1;
 
       &::before{
         content: '';
@@ -836,6 +1050,7 @@ a{
       height: 400px;
       position: relative;
       min-width: 600px;
+      z-index: -1;
 
       @include media(1450){
         margin-left: 0;
@@ -947,7 +1162,7 @@ a{
     line-height: 120%;
     color: #4F4F4F;
     max-width: 869px;
-    margin-top: 50px;
+    margin-top: 147px;
     margin-bottom: 109px;
 
     &__span{
@@ -960,6 +1175,7 @@ a{
     flex-direction: column;
     align-items: flex-end;
     position: relative;
+    z-index: -1;
 
     &::before{
       content: '';
@@ -1014,6 +1230,7 @@ a{
     padding: 24px 0 30px 0;
     position: relative;
     justify-content: center;
+    z-index: -1;
 
     @include media(768){
       flex-direction: column;
