@@ -493,10 +493,6 @@ a{
       font-size: 19px;
     }
   }
-
-  &__inner{
-    
-  }
 }
 
 .slick-track{
@@ -1407,6 +1403,273 @@ a{
         padding-top: 0;
         padding-left: 0;
         padding-top: 25px;
+      }
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+
+    @include media($lg){
+      padding-bottom: 100px;
+    }
+
+    .row{
+      justify-content: space-between;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background: #F2F2F2;
+    box-shadow: -2px -2px 15px rgba(255, 255, 255, 0.25), 2px 2px 15px rgba(221, 213, 213, 0.25);
+    border-radius: 6px;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      background: #FFC466;
+    }
+
+    &:hover .pump__item__desc{
+      color: #4F4F4F;
+    }
+
+    &:hover .pump__item__img{
+      filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.4));
+      filter: grayscale(100%);
+    }
+
+
+    @include media($lg){
+      margin-bottom: 50px;
+    }
+
+    &__img{
+      max-width: 270px;
+      height: 270px;
+      object-fit: contain;
+      transition: 300ms ease-in-out;
+    }
+
+    &__desc{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.04em;
+      color: #BDBDBD;
+      transition: 300ms ease-in-out;
+    }
+
+    &__title{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.04em;
+      color: #4F4F4F;
+    }
+  }
+}
+
+//pump__product
+
+.pump__product-intro{
+  padding-top: 97px;
+
+  &__top{
+    background: #9E9DCB;
+  }
+
+  &__category{
+
+    &__handler{
+      font-family: 'formular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 29px;
+      color: #FFC466;
+      margin-right: 5px;
+    }
+
+    &__current{
+      font-family: 'formular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 29px;
+      color: #4F4F4F;
+    }
+  }
+
+  &__title{
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;
+    color: #FFC466;
+    max-width: 540px;
+    width: 100%;
+    margin-top: 44px;
+    margin-left: 120px;
+    padding-bottom: 30px;
+
+    @include media($md){
+      font-size: 30px;
+      margin-left: 25px;
+      max-width: 400px;
+    }
+
+    @include media(440){
+      max-width: 300px;
+    }
+
+    @include media(370){
+      font-size: 24px;
+      max-width: 270px;
+    }
+  }
+}
+
+.pump__product-content{
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+
+  &>[class*="col"]{
+    padding: 0;
+  }
+
+  &__left{
+    background: #FFC466;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include media($lg){
+      align-items: center;
+    }
+
+    &__desc{
+      max-width: 424px;
+      width: 100%;
+      font-family: 'formular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 29px;
+      color: #333333;
+      margin: 30px 116px 0 0;
+
+      @include media(1090){
+        margin: 30px 15px 0 0;
+      }
+      @include media($lg){
+        margin: 55px 0;
+      }
+    }
+
+    &__img{
+      margin-right: 11px;
+
+      @include media($lg){
+        margin-bottom: 55px;
+      }
+    }
+  }
+
+  &__right{
+    position: relative;
+
+    @include media($lg){
+      order: -1;
+    }
+
+    &__top{
+      background: #333;
+      position: absolute;
+      top: -179px;
+      bottom: 174px;
+      width: 100%;
+      right:0;
+      
+      @include media(992){
+        position: static;
+      }
+
+      &>.container{
+        max-width: 400px;
+        height: 100%;
+      }
+
+      &__img{
+        height: 100%;
+
+        @include media($lg){
+          margin: 44px 0;
+        }
+      }
+    }
+
+    &__bottom{
+      background: #A6718F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 227px;
+      margin-top: 174px;
+
+      @include media($lg){
+        margin-top: 0;
+      }
+      @include media(524){
+        flex-direction: column;
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 95px;
+      }
+
+      &__btn{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 221%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFC466;
+        padding: 16.5px 46px;
+        border: 1px solid #FFC466;
+        border-radius: 4px;
+        margin: 0 15px;
+
+        @include media(524){
+          margin: 25px 0;
+          width: 228px;
+        }
+
+        &.current{
+          color: #A6718F;
+          background: #FFC466;
+        }
       }
     }
   }

@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Andritz')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Центробежные насосы  
+        .container
+          h1.pump__product-intro__title ЦЕНТРОБЕЖНЫЕ НАСОСЫ ANDRITZ
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Andritz на территории Украины
+        img(src="images/andritz-2.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/andritz.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')
