@@ -1530,7 +1530,7 @@ a{
     font-size: 56px;
     line-height: 120%;
     color: #FFC466;
-    max-width: 540px;
+    max-width: 515px;
     width: 100%;
     margin-top: 44px;
     margin-left: 120px;
@@ -1595,6 +1595,7 @@ a{
 
     &__img{
       margin-right: 11px;
+      max-width: 100%;
 
       @include media($lg){
         margin-bottom: 55px;
@@ -1624,10 +1625,12 @@ a{
       &>.container{
         max-width: 400px;
         height: 100%;
+        align-items: center;
+        display: flex;
       }
 
       &__img{
-        height: 100%;
+        max-width: 100%;
 
         @include media($lg){
           margin: 44px 0;
@@ -1873,5 +1876,243 @@ a{
         color: #F2F2F2;
       }
     }
+  }
+}
+
+.pump__advantages{
+  background: url(../images/service-bg.webp) bottom / cover no-repeat;
+
+  &__title{
+    margin-left: auto;
+    padding-top: 50px;
+    max-width: 444px;
+  }
+
+  &__row{
+    justify-content: space-between;
+  }
+
+  &__item{
+    margin-bottom: 100px;
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+
+    @include media($lg){
+      max-width: 100%;
+    }
+
+    &__p{
+      font-family: 'formular';
+      font-weight: normal;
+      font-style: normal;
+      line-height: 20px;
+      color: #4F4F4F;
+      font-size: 14px;
+      opacity: 0.7;
+
+      &::before{
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        background: #4F4F4F;
+
+        @include media($xl){
+          background: none;
+        }
+      }
+    }
+  }
+
+  &__gallery{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include media(992){
+      flex-direction: column;
+      align-items: center;
+    }
+    @include media($md){
+      display: none;
+    }
+
+    &__item{
+      max-width: 412px;
+      height: 245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 46px;
+      padding-right: 46px;
+
+      &.purple{
+        background: #9E9DCB;
+      }
+
+      &.red{
+        background: #A6718F;
+        height: 277px;
+      }
+
+      &.yellow{
+        background: #FFC466;
+
+        .pump__advantages__gallery__item__p{
+          color: #4F4F4F;
+        }
+
+        .pump__advantages__gallery__item__desc{
+          color: #4F4F4F;
+        }
+      }
+
+      &__title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+
+      &__p{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFC466;
+        margin-left: 21px;
+      }
+
+      &__desc{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFC466;
+      }
+    }
+  }
+}
+
+.borger__models{
+
+  &.container{
+    @include media($sm){
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+
+    @include media($lg){
+      flex-direction: column;
+    }
+  }
+
+  &__title{
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  &__item{
+    max-width: 470px;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #4F4F4F;
+    margin:0 15px;
+    transition: 200ms ease-in-out;
+
+    &:first-child{
+      @include media($lg){
+        margin-bottom: 259px; 
+      }
+    }
+
+    &:hover{
+      background: #9E9DCB;
+    }
+
+    &:hover .borger__models__item__img{
+      filter: grayscale(100%);
+    }
+
+    &__p{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #F2F2F2;
+      padding-bottom: 47px;
+    }
+
+    &__img{
+      max-width: 400px;
+      margin-top: -110px;
+
+      @include media($md){
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.pump__cart{
+  background: linear-gradient(102.89deg, rgba(51, 51, 51, 0.4) 4.01%, rgba(51, 51, 51, 0.4) 4.02%, rgba(0, 0, 0, 0.2) 78.63%);
+  backdrop-filter: blur(8px);
+  border-radius: 6px;
+  max-width: 600px;
+  margin: 15px auto 150px auto;
+  padding: 30px 50px;
+
+  &__title{
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+    margin-bottom: 20px;
+  }
+
+  &__p{
+    font-family: 'Formular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F2F2F2;
+    margin-bottom: 70px;
+  }
+
+  &__btn{
+    background: #FFC466;
+    border-radius: 3px;
+    padding: 17px 45px;
+    font-family: 'formular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
   }
 }

@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Andritz')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Роторные насосы
+        .container
+          h1.pump__product-intro__title РОТОРНЫЕ   НАСОСЫ   BÖRGER
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Andritz на территории Украины
+        img(src="images/borger-2.webp", alt="pump borger").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/borger-1.webp", alt="pump borger").pump__product-content__right__top__img
+        .pump__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn сайт
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages
+      .container
+        h1.title.pump__advantages__title Основные преимущества насосов BÖRGER
+        .pump__advantages__row.row
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p С октября месяца 2018 года наша компания ПРАЙТЕК стала официальным дистрибьютором завода BOERGER GmBh в Украине.
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Основными продуктами предприятия являются роторно-лопастные насосы в стационарном и мобильном исполнении, а также измельчители (мацераторы).
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Роторные насосы BOERGER широко используются во многих отраслях промышленности, таких как пищевая, нефтегазовая, целлюлозно-бумажная, металлургическая, химическая.
+        .pump__advantages__row.row
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p На сегодняшний день, компания Boerger, предлагает две линейки роторных насосов: BLUline и ONIXline.
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Линейка насосов BLUline — это надёжное, проверенное временем оборудование, имеющее в своём активе 21 типоразмер насосов с различной модификацией роторов и материалов.
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p ONIXline — недавно разработанные роторно-лопастные насосы в оптимизированном корпусе. Они оснащенные редуктором повышенной прочности, обеспечивают хорошую производительность даже при высоком давлении. Для насосов ONIXline доступен широкий выбор уплотнительных систем.  
+        .pump__advantages__gallery 
+          .pump__advantages__gallery__item.purple
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H10V14H18V18ZM8 18H0V6H8V18ZM18 12H10V0H18V12ZM8 4H0V0H8V4Z" fill="#FFC466")
+              p.pump__advantages__gallery__item__p ПРИНЦИП ДЕЙСТВИЯ
+            p.pump__advantages__gallery__item__desc Роторно-лопастные насосы Börger - это самовсасывающие объемные насосы без клапанов.
+          .pump__advantages__gallery__item.red
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H10V10H18V18ZM8 18H0V10H8V18ZM18 8H10V0H18V8ZM8 8H0V0H8V8Z" fill="#FFC466")
+              p.pump__advantages__gallery__item__p ПРЕИМУЩЕСТВА
+            p.pump__advantages__gallery__item__desc Конструкция насосов индивидуальна и всегда соответствует выполняемой задаче.
+          .pump__advantages__gallery__item.yellow
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H12V8H18V18ZM10 18H0V8H10V18ZM18 6H12V0H18V6ZM10 6H0V0H10V6Z" fill="#4F4F4F")
+              p.pump__advantages__gallery__item__p ПРИМЕНЕНИЕ
+            p.pump__advantages__gallery__item__desc Насосы фирмы Börger изготавливаются специально для выполнения конкретной задачи..
+      .borger__models.container
+        h1.title.borger__models__title Модельный ряд
+        .borger__models__row 
+          a(href="blueline.html").borger__models__item
+            img(src="images/borger-1.webp", alt="pump borger").borger__models__item__img
+            p.borger__models__item__p СЕРИЯ BLUELINE
+          a(href="onixline.html").borger__models__item 
+            img(src="images/borger-2.webp", alt="pump borger").borger__models__item__img
+            p.borger__models__item__p СЕРИЯ ONIXLINE
+      .pump__cart 
+        h1.pump__cart__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+        p.pump__cart__p Узнайте подробнее о среде использования продукции из каталога
+        a(href="#!").pump__cart__btn Ознакомиться 
+      
+
+
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')
