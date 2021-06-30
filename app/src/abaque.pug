@@ -1,0 +1,172 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Andritz')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Перистальтические насосы
+        .container
+          h1.pump__product-intro__title.abaque__product-intro__title ПЕРИСТАЛЬТИЧЕСКИЕ НАСОСЫ ABAQUE
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Abaque на территории Украины
+        img(src="images/abaque.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/abaque-2.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.abaque__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages
+      .container
+        h1.title.pump__advantages__title Основные преимущества насосов Abaque
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Конструкция не предусматривает  никаких дополнительных уплотнений и/или сальниковых набивок и не допускает трения металлических компонентов друг о друга. Шланг – это фактически единственная часть насоса, которая изнашивается.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Жидкость или другая перекачиваемая  среда не контактирует с корпусом насоса и соприкасается исключительно с трубкой, что в свою очередь уберегает жидкость от попадания в нее инородных опасных включений 
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Замена шланга занимает не больше 10-15 минут. Стоит отметить, что шланг насоса очень прочен и может выдерживать долговременную нагрузку, благодаря использованию качественных эластомеров и многослойному армированию.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Сервисное обслуживание такого типа насоса занимает минимум времени
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Данный тип насоса можно использовать в качестве "дозатора". Погрешность производительности расхода от скорости вращения вала можно оценить как ± 0,5 %, и даже лучше.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Работа на сухом ходу даже, на протяжении долгого времени, как уже было сказано ранее, не влияет на рабочие свойства насоса и не ускоряет его износ. 
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Перистальтические насосы - это отличное решение при перекачке мультифазных жидкостей.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Перистальтический насос защищен от протечек. Это особенно важно при перекачивании агрессивных и/или абразивных растворов. 
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Реверсное перекачивание жидкости
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Тихая работа
+    .abaque__downloads.container 
+      .abaque__downloads__title
+        p.abaque__downloads__title__p Основные типоразмеры
+        p.abaque__downloads__title__p.dn Кривые
+      .abaque__downloads__content
+        .abaque__downloads__left 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD10
+              p.abaque__downloads__left__item__desc ДО 18 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD15
+              p.abaque__downloads__left__item__desc ДО 35 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD20
+              p.abaque__downloads__left__item__desc ДО 67 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD25
+              p.abaque__downloads__left__item__desc ДО 92 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD32
+              p.abaque__downloads__left__item__desc ДО 116 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD40
+              p.abaque__downloads__left__item__desc ДО 184 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HDX40
+              p.abaque__downloads__left__item__desc ДО 258 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD50
+              p.abaque__downloads__left__item__desc ДО 325 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD65
+              p.abaque__downloads__left__item__desc ДО 67 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HDX40
+              p.abaque__downloads__left__item__desc ДО 92 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HDX65
+              p.abaque__downloads__left__item__desc ДО 116 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HDX80
+              p.abaque__downloads__left__item__desc ДО 184 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD80
+              p.abaque__downloads__left__item__desc ДО 258 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title HD100
+              p.abaque__downloads__left__item__desc ДО 325 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+    .abaque__cart
+      .pump__cart
+        h1.pump__cart__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+        p.pump__cart__p Узнайте подробнее о среде использования продукции из каталога
+        a(href="#!").pump__cart__btn Ознакомиться 
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')

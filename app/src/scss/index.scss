@@ -2080,6 +2080,10 @@ a{
   margin: 15px auto 150px auto;
   padding: 30px 50px;
 
+  @include media(360){
+    padding-left: 15px;
+  }
+
   &__title{
     font-family: 'Proxima Nova', 'formular';
     font-style: normal;
@@ -2114,5 +2118,170 @@ a{
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #333333;
+  }
+}
+
+//abaque
+
+.abaque__product-content__right__bottom{
+  margin-top: 203px;
+}
+
+.abaque__product-intro__title{
+
+  @include media(992){
+    margin-left: 25px;
+  }
+  @include media(460){
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  @include media(356){
+    margin-left: 15px;
+    font-size: 20px;
+  }
+}
+
+.abaque__advantages__row{
+  justify-content: space-around;
+}
+
+.abaque__advantages__item{
+  max-width: 535px;
+}
+
+.abaque__downloads{
+  background: #F2F2F2;
+  border: 1px solid rgba(1, 0, 47, 0.1);
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 25px 48px 83px; 
+
+  @include media($md){
+    padding-bottom: 15px;
+  }
+
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 53px;
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #4F4F4F;
+    padding: 0px 231px 0 130px;
+
+    @include media(992){
+      padding: 0 100px 0 0;
+    }
+
+    &__p.dn{
+      @include media($md){
+        display: none;
+      }
+    }
+  }
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left{
+    width: 100%;
+
+    &__item{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      @include media(412){
+        flex-direction: column;
+        align-items: start;
+      }
+
+      &__div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 55%;
+
+        @include media($md){
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+
+
+      &__title{
+        font-family: 'Proxima Nova', 'formular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #4F4F4F;
+      }
+
+      &__desc{
+        font-family: 'Proxima Nova', 'formular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #4F4F4F;
+
+        @include media(768){
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item{
+      display: flex;
+      align-items: start;
+      cursor: pointer;
+
+      &__i{
+        margin-right: 30px;
+        margin-top: 10px;
+
+        @include media($sm){
+          margin-right: 8px;  
+        }
+      }
+
+      &__p{
+        font-family: 'formular';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 35px;
+        color: #4F4F4F;
+      }
+    }
+  }
+}
+
+.abaque__cart{
+  background: url(../images/service-bg.webp) top / cover no-repeat;
+  padding-bottom: 157px;
+  padding-top: 100px;
+  margin-bottom: -57px;
+
+  .pump__cart{
+    margin-bottom: 0;
   }
 }
