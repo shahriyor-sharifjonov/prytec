@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Gate Mouvex Pump')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Герметичные насосы
+        .container
+          h1.pump__product-intro__title ШГЕРМЕТИЧНЫЕ НАСОСЫ TEIKOKU
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left.teikou__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Teikoku на территории Украины
+        img(src="images/teikoku-2.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/teikoku-3.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.mouvex__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages.teikoku__advantages
+      .container 
+        h1.title.pump__advantages__title Основные преимущества насосов Teikoku
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-1.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Отсутствие утечек
+            p.teikoku__advantages__p Перекачка токсичных, взрывоопасных, дорогих, опасных и агрессивных жидкостей без утечк
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-2.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Герметичность
+            p.teikoku__advantages__p Идеально подходит для закрытых вакуумных систем или для жидкостей, которые реагируют на контакт с воздухом.
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-3.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Отсутствие  торцевого уплотнения
+            p.teikoku__advantages__p Не требует сальникового и механического уплотнений, а также других уплотнительных колец. Полное отсутствие уплотнительный систем между вращающимися и неподвижными частями насоса. Отсутствие механических торцевых уплотнений и сальников приводит к высокой надежности и гарантии герметичности, а также к отсутствию затрат на ремонт уплотнений и замену трущихся частей.
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-4.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Отсутствие смазки и её контроля
+            p.teikoku__advantages__p Охлаждение и смазка двигателя и подшипников осуществляется с помощью перекачиваемой жидкости. Поэтому не требуется проверка уровня смазки и её регулярный контроль. 
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-5.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Компактный дизайн
+            p.teikoku__advantages__p Электродвигатель и насос представляют собой единый блок. Не требуется проводить центровку насоса и подготавливать сложный фундамент.
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-6.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Бесшумная работа герметичного насоса
+            p.teikoku__advantages__p Низкий уровень шума, так как для охлаждения двигателя не используются вентиляторы. Все вращающиеся детали расположены внутри толстого корпуса.
+        .teikoku__advantages__row 
+          img(src="images/teikoku-ad-7.webp", alt="").teikoku__advantages__img
+          .teikoku__advantages__content 
+            h1.teikoku__advantages__title Не требует обслуживания
+            p.teikoku__advantages__p поскольку отсутствует необходимость в регулярном контроле смазки и протечек.
+
+
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')

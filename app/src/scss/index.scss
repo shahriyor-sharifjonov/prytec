@@ -2414,3 +2414,40 @@ a{
   width: 100%;
   height: 60px;
 }
+
+.teikou__product-content__left{
+  justify-content: space-between;
+}
+
+.teikoku__advantages{
+  margin-bottom: 200px;
+
+  &__row{
+    display: flex;
+    margin-bottom: 24px;
+    align-items: start;
+  }
+
+  &__img{
+    margin-right: 80px;
+  }
+
+  &__title{
+    font-family: 'Proxima Nova', 'formular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #4F4F4F;
+    margin-bottom: 8px;
+  }
+
+  &__p{
+    font-family: 'formular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 35px;
+    color: #4F4F4F;
+  }
+}
