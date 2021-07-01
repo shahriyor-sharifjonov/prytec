@@ -1,0 +1,177 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Eccentric Mouvex Pump')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Ексцентриковые насосы
+        .container
+          h1.pump__product-intro__title ЕКСЦЕНТРИКОВЫЕ НАСОСЫ MOUVEX
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Mouvex на территории Украины
+        img(src="images/mouvex-3.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/mouvex.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.mouvex__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages
+      .container
+        h1.title.pump__advantages__title Основные преимущества насосов Mouvex
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p C марта 2020 наша компания ПРАЙТЕК имеет возможность предлагать своим клиентам оборудование производства французского завода MOUVEX.  Данное предприятие было основано 1906 году и является частью корпорации PSG.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p На сегодняшний день компания Mouvex —  это мировой лидер по производству насосов и компрессоров для перекачивания различных жидкостей, и сухих сыпучих продуктов по всему миру.
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Компания Mouvex® была основана инженером Андре Пети в 1906 году, после изучения проблем, с которыми сталкиваются пользователи шестеренных и роторных насосов при оптимизации своего процесса, в результате чего  был изобретен эксцентриковый дисковый насос.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Все его преемники пошли по его стопам, включая его сына Альберта, который управлял компанией с 1938 года до тех пор, пока в 1998 году она не была поглощена Blackmer®.
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Mouvex стала частью PSG® в 2008 году и в настоящее время работает на пяти континентах с глобальной сетью дистрибьюторов и производителей оригинального оборудования.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Шиберный ( пластинчатый) насос – разновидность объёмного насоса, основным органом которого является ротор с подвижными лопастями. 
+    .andritz__lineup.container
+      h1.title.andritz__lineup__title Модельный ряд
+      .row.andritz__lineup <!--Andritz Item ROW Start 1 - ITEM-->
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 1 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-2.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ А
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Производительность – до 55 м3/час (конструкция с механическим торцевым уплотнением)
+            p.mouvex__hidden__item__p Благодаря своей оригинальной конструкции, насос серии А является реверсивным — это дает возможность перекачивать жидкость в обоих направлениях.
+            p.mouvex__hidden__item__p • Высокая эффективность - уникальный принцип эксцентрикового диска обеспечивает плавность процесса перекачки
+            p.mouvex__hidden__item__p • (низкая скорость вращения) при высокой эффективности
+            p.mouvex__hidden__item__p • высокий уровень самовсасывания
+            p.mouvex__hidden__item__p • высокая прочность
+            p.mouvex__hidden__item__p • стабильный уровень производительности в течении длительного времени эксплуатации
+            p.mouvex__hidden__item__p • практически неограниченная сфера применения
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 2 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-4.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ С
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Производительность – до 18 м3/час (конструкция БЕЗ  механического торцевого уплотнения)
+            p.mouvex__hidden__item__p • Конструкция без уплотнения, что означает отсутствие утечек
+            p.mouvex__hidden__item__p • Самовсасывающий с высокой мощностью всасывания
+            p.mouvex__hidden__item__p • Возможность работать всухую
+            p.mouvex__hidden__item__p • Сохранение характеристик подачи / давления с течением времени за счет автоматической регулировки диска / цилиндра
+            p.mouvex__hidden__item__p • Возможность перекачивания продуктов с низкой и высокой вязкостью
+            p.mouvex__hidden__item__p • Выход не зависит от изменения вязкости
+            p.mouvex__hidden__item__p • Низкая линейная скорость
+            p.mouvex__hidden__item__p • Низкий уровень пульсации
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 3 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-5.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ SLC
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Решение для химико-технологических процессов ,  требующих полной локализации продукта (до 45 м³ / ч )
+            p.mouvex__hidden__item__p • все комплектующие насоса изготовлены из нержавеющей стали
+            p.mouvex__hidden__item__p • отсутствие механического уплотнения и набивки
+            p.mouvex__hidden__item__p • точная дозировка
+            p.mouvex__hidden__item__p • высокий уровень самовсасывания
+            p.mouvex__hidden__item__p • максимальное выкачивание
+            p.mouvex__hidden__item__p • допустимый запуск на «сухую»
+            p.mouvex__hidden__item__p • стабильный уровень производительности в течении длительного времени эксплуатации
+            p.mouvex__hidden__item__p • выдающаяся объемная эффективность
+            p.mouvex__hidden__item__p • производительность не зависит от изменения вязкости
+            p.mouvex__hidden__item__p • низкая линейная скорость
+            p.mouvex__hidden__item__p • низкий пульсационный эффект
+      .row.andritz__lineup <!--Andritz Item ROW Start 2 - ITEM-->
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 1 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ SLS (ГИГИЕНИЧЕСКОГО ИСПОЛНЕНИЯ)
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Решение для продуктов, чувствительных к воздуху и требующих высоких санитарных стандартов (до 36 м3 / ч).
+            p.mouvex__hidden__item__p • гигиеническое исполнение
+            p.mouvex__hidden__item__p • работа без продукта в режиме всасывания до 5 минут
+            p.mouvex__hidden__item__p • высокий уровень самовсасывания
+            p.mouvex__hidden__item__p • улучшенная энергоэффективность
+            p.mouvex__hidden__item__p • без пульсационный поток для защиты чувствительных к сдвигу продуктов
+            p.mouvex__hidden__item__p • простое и экономичное обслуживание
+            p.mouvex__hidden__item__p • малое количество компонентов
+            p.mouvex__hidden__item__p • прост в установке
+            p.mouvex__hidden__item__p • очистка на месте (CIP) и дезинфекция на месте (SIP)
+            p.mouvex__hidden__item__p • конструкция диска Eccentric Disc обеспечивает равномерный поток и улучшенную экономию энергии
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 2 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-6.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ H-FLO
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Производительность обеспечивает равномерный и эффективный поток с широким диапазоном вязкостей  - до 65 м3/ч , 10 бар 
+            p.mouvex__hidden__item__p • Эксцентриковая конструкция диска обеспечивает равномерный поток и улучшенную экономию энергии
+            p.mouvex__hidden__item__p • Чрезвычайно щадящий, безимпульсный поток для защиты чувствительных к сдвигу продуктов
+            p.mouvex__hidden__item__p • Сокращенное техническое обслуживание без механических уплотнений и зубчатых колес
+            p.mouvex__hidden__item__p • Простота установки
+            p.mouvex__hidden__item__p • Чистота на месте (CIP)
+            p.mouvex__hidden__item__p • Стерилизация на месте (SIP) для максимального удобства и чистоты
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 3 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-7.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ MICRO C
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Ваше решение для непрерывного дозирования с низким расходом (менее 800 л/ч / 3,5 ГПМ). 
+            p.mouvex__hidden__item__p • Герметичная перекачка без использования магнитных муфт или торцевых уплотнений
+            p.mouvex__hidden__item__p • Отличная самоподготовка
+            p.mouvex__hidden__item__p • Сухой ход
+            p.mouvex__hidden__item__p • Небольшие размеры и легкая интеграция
+            p.mouvex__hidden__item__p • Низкая скорость сдвига
+            p.mouvex__hidden__item__p • Выдающийся объемный КПД
+            p.mouvex__hidden__item__p • Перекачиваемый продукт постоянно обновляется
+            p.mouvex__hidden__item__p • Способность перекачивать продукты с низкой и высокой вязкостью
+            p.mouvex__hidden__item__p • Выход не зависит от изменения вязкости
+            p.mouvex__hidden__item__p • Низкая линейная скорость
+            p.mouvex__hidden__item__p • Легкая очистка (без зон удержания)
+            p.mouvex__hidden__item__p • Постоянная производительность с
+      .row.andritz__lineup <!--Andritz Item ROW Start 3 - ITEM-->
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 1 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-8.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ G-FLO
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Оптимальное решение для перекачивания при химико-технологических процессах с высокой производительностью - до 65 м3 / ч, 10 бар 
+            p.mouvex__hidden__item__p Подходит для большинства химических и промышленных процессов, особенно тех, которые требуют постоянного не пульсирующего потока и бережного обращения с перекачиваемой средой
+            p.mouvex__hidden__item__p • Стабильная и эффективная производительность с широким диапазоном вязкости
+            p.mouvex__hidden__item__p • Конструкция эксцентрикового диска обеспечивает постоянный поток и повышенную экономию энергии
+            p.mouvex__hidden__item__p • Отсутствие пульсации
+            p.mouvex__hidden__item__p • Простая установка
+        .col-12.col-lg-4.andritz__lineup__item <!--Andritz Item Start 2 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/mouvex-9.webp", alt="pump andritz").andritz__lineup__item__visible__img
+            p.andritz__lineup__item__visible__p ЭКСЦЕНТРИКОВЫЕ ДИСКОВЫЕ НАСОСЫ СЕРИИ S
+          .mouvex__hidden__item.andritz__lineup__item__hidden
+            p.mouvex__hidden__item__title Ваше решение для санитарных применений с очисткой на месте (C.O.P), требующее быстрого и простого демонтажа (до 12 м3/ч / 52 ГПМ). 
+            p.mouvex__hidden__item__p • Герметичная перекачка без использования магнитных муфт или торцевых уплотнений
+            p.mouvex__hidden__item__p • Самовсасывание с сильной силой всасывания
+            p.mouvex__hidden__item__p • Способность дренировать трубопроводы (на входе и выходе)
+            p.mouvex__hidden__item__p • Сухой ход до пяти минут
+            p.mouvex__hidden__item__p • Низкая скорость сдвига
+            p.mouvex__hidden__item__p • Постоянная производительность с течением времени
+            p.mouvex__hidden__item__p • Выдающийся объемный КПД 
+            p.mouvex__hidden__item__p • Перекачиваемый продукт постоянно обновляется
+            p.mouvex__hidden__item__p • Выход не зависит от изменения вязкости
+            p.mouvex__hidden__item__p • Низкая линейная скорость
+            p.mouvex__hidden__item__p • Низкий эффект пульсации
+
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')
