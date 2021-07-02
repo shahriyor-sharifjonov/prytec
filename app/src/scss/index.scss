@@ -2795,3 +2795,29 @@ a{
     margin-bottom: 50px;
   }
 }
+
+//shredder
+
+.shredder{
+
+  &__content{
+    margin-top: 97px;
+  }
+
+  &__item{
+    height: max-content;
+
+    &__title{
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    &__link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+}
