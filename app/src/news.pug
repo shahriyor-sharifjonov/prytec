@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Home')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+                p.articles__item__p Рабочее колесо насоса ANDRITZ
+                p.articles__item__p Новая информация про центробежные насосы Andrithz
+                p.articles__item__p Новая информация про измельчители Boerger
+                p.articles__item__p Новая информация про центробежные насосы Andrithz
+    .news__category.container
+      a(href="articles.html").news__category__handler Статьи /
+      a(href="#!").news__category__current Рабочее колeсо насоса Andritz
+    .news__content 
+      .news__content__container
+        p.news__content__date 11.11.2020
+        h1.news__content__title.title Рабочее колесо насоса ANDRITZ
+        p.news__content__text Правильно подобранное рабочее колесо — залог успеха работы любого центробежного  насоса, потому для перекачивания высокоабразивных сред важно подобрать правильное рабочее колесо. Рабочее колесо (импеллер) к насосу ANDRITZ (Андритц) производится только из нержавеющей стали Duplex, что позволяет на протяжении долгого времени не производить замену данного колеса. Дюплекс (Duplex) — это высокопрочный, абразивостойкий материал, который отличается от обычной нержавеющей стали высоким содержанием износостойких элементов (никеля, молибдена). В отличие от других производителей, ANDRITZ предлагает открытое рабочее колесо, а также полуоткрытое и закрытое рабочее колесо, в то время как другие производители предлагают только полуоткрытое или закрытое рабочее колесо.
+      img(src="images/news-big.webp", alt="").news__img-big
+      .news__content__container 
+        h1.news__content__subtitle.title Открытое рабочее колесо
+        p.news__content__subtext используется для высокоабразивных и загрязненных сред, во  избежание закупоривания и остановки  колеса. Открытое рабочее колесо идеально подходит для перекачивания бумажной массы, целлюлозной массы, воды с большими включениями.
+        img(src="images/news-1.webp", alt="").news__content__img
+        h1.news__content__subtitle.title Полуоткрытое рабочее колесо
+        p.news__content__subtext используется для полузагрязненных  сред, со средним содержанием твердых включений, но многое зависит от силы  потока и размера частиц.
+        img(src="images/news-2.webp", alt="").news__content__img
+        h1.news__content__subtitle.title Закрытое рабочее колесо
+        p.news__content__subtext используется преимущественно для чистых сред — для чистой воды.
+        img(src="images/news-3.webp", alt="").news__content__img
+        p.news__content__subtext На каждом колесе есть лопатки, которые в свою очередь влияют на способность рабочего колеса перекачивать частицы. Чем меньше количество лопаток   на импеллере, тем крупнее частицы колесо может пропустить. Так же количество лопаток влияет на  кавитационный запас насоса (NPSH), что очень важно предусмотреть  для правильной работы насосного агрегата.
+        a(href="#top").teikoku__top наверх 
+    
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')
