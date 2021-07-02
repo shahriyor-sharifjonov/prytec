@@ -69,3 +69,57 @@ $('.slider__inner ').slick({
   ]
 });
 
+let first = document.querySelector('.first');
+let second = document.querySelector('.second');
+let third = document.querySelector('.third');
+let fourth = document.querySelector('.fourth');
+let firstDownload = document.querySelector('.first__download');
+let secondDownload = document.querySelector('.second__download');
+let thirdDownload = document.querySelector('.third__download');
+let fourthDownload = document.querySelector('.fourth__download');
+let cartTitle :HTMLTitleElement = document.querySelector('.finder__cart__title');
+
+first.addEventListener('click', ()=>{
+  first.classList.add('current');
+  second.classList.remove('current');
+  third.classList.remove('current');
+  fourth.classList.remove('current');
+  firstDownload.classList.add('current');
+  secondDownload.classList.remove('current');
+  thirdDownload.classList.remove('current');
+  fourthDownload.classList.remove('current');
+  cartTitle.innerText = "ПРИМЕРЫ ЭКСПЛУАТАЦИИ MEX И LEX";
+});
+second.addEventListener('click', ()=>{
+  second.classList.add('current');
+  first.classList.remove('current');
+  third.classList.remove('current');
+  fourth.classList.remove('current');
+  secondDownload.classList.add('current');
+  firstDownload.classList.remove('current');
+  thirdDownload.classList.remove('current');
+  fourthDownload.classList.remove('current');
+  cartTitle.innerText = "ПРИМЕРЫ ЭКСПЛУАТАЦИИ CDS И NP";
+});
+third.addEventListener('click', ()=>{
+  third.classList.add('current');
+  second.classList.remove('current');
+  first.classList.remove('current');
+  fourth.classList.remove('current');
+  thirdDownload.classList.add('current');
+  secondDownload.classList.remove('current');
+  firstDownload.classList.remove('current');
+  fourthDownload.classList.remove('current');
+  cartTitle.innerText = "ПРИМЕРЫ ЭКСПЛУАТАЦИИ DEX";
+});
+fourth.addEventListener('click', ()=>{
+  fourth.classList.add('current');
+  second.classList.remove('current');
+  third.classList.remove('current');
+  first.classList.remove('current');
+  fourthDownload.classList.add('current');
+  secondDownload.classList.remove('current');
+  thirdDownload.classList.remove('current');
+  firstDownload.classList.remove('current');
+  cartTitle.innerText = "ПРИМЕРЫ ЭКСПЛУАТАЦИИ VPM";
+});

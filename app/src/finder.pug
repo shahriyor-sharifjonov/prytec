@@ -1,0 +1,327 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Finder Pump')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Вакуумные насосы
+        .container
+          h1.pump__product-intro__title ВАКУУМНЫЕ НАСОСЫ FINDER
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Mouvex на территории Украины
+        img(src="images/finder-2.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          .container
+            img(src="images/finder-1.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.mouvex__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages
+      .container
+        h1.title.pump__advantages__title.mr-minus Основные преимущества насосов Finder
+        .pump__advantages__row.row.mt-minus
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Наиболее распространенные области применения вакуумных насосов Finder - пищевая, химическая промышленность, фармацевтика, производство керамических изделий и кирпича
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Вакуумные насосы Finder зарекомендовали себя как надежное вакуумное оборудование, которое прослужит долгие годы с минимальными затратами на сервисное обслуживание
+          .col-12.col-lg-4.pump__advantages__item.dbn
+        .pump__advantages__row.row
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Вакуумное оборудование Finder можно применять для различных газообразных сред, в том числе и для газов, с высоким содержанием жидкости
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Вакуумные насосы Finder имеют низкий уровень вибрации в сравнении с другими производителями вакуумной техники
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Для каждого типа вакуумных насосов производитель Finder Pompe предоставляет большой выбор материального исполнения корпусов, рабочих колес и уплотнений
+        .pump__advantages__row.row
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Насосы Finder проявили себя как надежный исполнитель своих задач, потому для поддержания их продуктивной работы требуется минимальное техническое обслуживание
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Отсутствие смазочных материалов в данных насосах значительно упрощает их использование
+          .col-12.col-lg-4.pump__advantages__item
+            p.pump__advantages__item__p Оптимальное решение "цена - качество", разумная стоимость за надежное европейское оборудование
+      .pump__advantages__gallery 
+          .pump__advantages__gallery__item.purple
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H10V14H18V18ZM8 18H0V6H8V18ZM18 12H10V0H18V12ZM8 4H0V0H8V4Z" fill="#FFC466")
+              p.pump__advantages__gallery__item__p ПРИНЦИП ДЕЙСТВИЯ
+            p.pump__advantages__gallery__item__desc Роторно-лопастные насосы Börger - это самовсасывающие объемные насосы без клапанов.
+          .pump__advantages__gallery__item.red
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H10V10H18V18ZM8 18H0V10H8V18ZM18 8H10V0H18V8ZM8 8H0V0H8V8Z" fill="#FFC466")
+              p.pump__advantages__gallery__item__p ПРЕИМУЩЕСТВА
+            p.pump__advantages__gallery__item__desc Конструкция насосов индивидуальна и всегда соответствует выполняемой задаче.
+          .pump__advantages__gallery__item.yellow
+            .pump__advantages__gallery__item__title
+              svg(width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg").pump__advantages__gallery__item__svg
+                path(d="M18 18H12V8H18V18ZM10 18H0V8H10V18ZM18 6H12V0H18V6ZM10 6H0V0H10V6Z" fill="#4F4F4F")
+              p.pump__advantages__gallery__item__p ПРИМЕНЕНИЕ
+            p.pump__advantages__gallery__item__desc Насосы фирмы Börger изготавливаются специально для выполнения конкретной задачи..
+    .finder__lineup.container   
+      .finder__lineup__content 
+        div 
+          .finder__lineup__item.first.current
+            img(src="images/finder-lineup-1.webp", alt="").finder__lineup__item__img
+            p.finder__lineup__item__p ВАКУУМНЫЕ ОДНОСТУПЕНЧАТЫЕ НАСОСЫ ТИПА MEX И LEX
+        div 
+          .finder__lineup__item.second
+            img(src="images/finder-lineup-2.webp", alt="").finder__lineup__item__img
+            p.finder__lineup__item__p ВАКУУМНЫЕ ДВУХСТУПЕНЧАТЫЕ НАСОСЫ ТИПА  CDS И NP
+      .finder__lineup__content 
+        div 
+          .finder__lineup__item.third
+            img(src="images/finder-lineup-3.webp", alt="").finder__lineup__item__img
+            p.finder__lineup__item__p ВАКУУМНЫЙ ОДНОСТУПЕНЧАТЫЙ НАСОС ТИПА DEX
+        div 
+          .finder__lineup__item.fourth
+            img(src="images/finder-lineup-4.webp", alt="").finder__lineup__item__img
+            p.finder__lineup__item__p МОНОБЛОЧНЫЙ ВАКУУМНЫЙ НАСОС ТИПА VPM
+    .abaque__downloads.finder__downloads.container.current.first__download
+      .abaque__downloads__title
+        p.abaque__downloads__title__p Основные типоразмеры
+        p.abaque__downloads__title__p.dn Кривые
+      .abaque__downloads__content
+        .abaque__downloads__left 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 25
+              p.abaque__downloads__left__item__desc ДО 18 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 50
+              p.abaque__downloads__left__item__desc ДО 35 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 90
+              p.abaque__downloads__left__item__desc ДО 67 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 125
+              p.abaque__downloads__left__item__desc ДО 92 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 150
+              p.abaque__downloads__left__item__desc ДО 116 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 250
+              p.abaque__downloads__left__item__desc ДО 184 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 320
+              p.abaque__downloads__left__item__desc ДО 258 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title MEX/LEX 450
+              p.abaque__downloads__left__item__desc ДО 325 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+    .abaque__downloads.finder__downloads.container.second__download
+      .abaque__downloads__title
+        p.abaque__downloads__title__p Основные типоразмеры
+        p.abaque__downloads__title__p.dn Кривые
+      .abaque__downloads__content
+        .abaque__downloads__left 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 3-30
+              p.abaque__downloads__left__item__desc ДО 21 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 3-60
+              p.abaque__downloads__left__item__desc ДО 48 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 3-70
+              p.abaque__downloads__left__item__desc ДО 56 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 4-110
+              p.abaque__downloads__left__item__desc ДО 100 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 4-180
+              p.abaque__downloads__left__item__desc ДО 153 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 4-230
+              p.abaque__downloads__left__item__desc ДО 190 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 5-300
+              p.abaque__downloads__left__item__desc ДО 260 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 5-400
+              p.abaque__downloads__left__item__desc ДО 352 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 5-480
+              p.abaque__downloads__left__item__desc ДО 190 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 8-700
+              p.abaque__downloads__left__item__desc ДО 260 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title CDS 8-900
+              p.abaque__downloads__left__item__desc ДО 352 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+    .abaque__downloads.finder__downloads.container.third__download
+      .abaque__downloads__title
+        p.abaque__downloads__title__p Основные типоразмеры
+        p.abaque__downloads__title__p.dn Кривые
+      .abaque__downloads__content
+        .abaque__downloads__left 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title DEX 600
+              p.abaque__downloads__left__item__desc ДО 510 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title DEX 800
+              p.abaque__downloads__left__item__desc ДО 730 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title DEX 1200
+              p.abaque__downloads__left__item__desc ДО 950 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title DEX 1800
+              p.abaque__downloads__left__item__desc ДО 1500 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+    .abaque__downloads.finder__downloads.container.fourth__download
+      .abaque__downloads__title
+        p.abaque__downloads__title__p Основные типоразмеры
+        p.abaque__downloads__title__p.dn Кривые
+      .abaque__downloads__content
+        .abaque__downloads__left 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 11520
+              p.abaque__downloads__left__item__desc ДО 10 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 12025
+              p.abaque__downloads__left__item__desc ДО 18 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 12045
+              p.abaque__downloads__left__item__desc ДО 31 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 12065
+              p.abaque__downloads__left__item__desc ДО 47 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 16050
+              p.abaque__downloads__left__item__desc ДО 54 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+          .abaque__downloads__left__item
+            div.abaque__downloads__left__item__div 
+              p.abaque__downloads__left__item__title VPM 16060
+              p.abaque__downloads__left__item__desc ДО 68 М³/Ч ПРИ 120 МБАР
+            .abaque__downloads__right__item 
+              i.far.fa-file.abaque__downloads__right__item__i
+              p.abaque__downloads__right__item__p Загрузить 
+    .finder__cart__content  
+      .pump__cart.finder__cart
+        h1.pump__cart__title.finder__cart__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ MEX И LEX
+        p.pump__cart__p Узнайте подробнее о среде использования продукции из каталога
+        a(href="#!").pump__cart__btn Ознакомиться 
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')

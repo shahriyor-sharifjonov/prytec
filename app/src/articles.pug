@@ -33,18 +33,22 @@ html(lang="en")
             +filter__link('Отрытое рабочее колесо')
         .col-12.col-lg-9
           .articles__content 
-            .articles__item 
-              img(src="images/article-1.webp", alt="").articles__item__img
-              p.articles__item__p Рабочее колесо насоса ANDRITZ
-            .articles__item 
-              img(src="images/article-2.webp", alt="").articles__item__img
-              p.articles__item__p Новая информация про центробежные насосы Andrithz
-            .articles__item 
-              img(src="images/article-3.webp", alt="").articles__item__img
-              p.articles__item__p Новая информация про измельчители Boerger
-            .articles__item 
-              img(src="images/article-4.webp", alt="").articles__item__img
-              p.articles__item__p Новая информация про центробежные насосы Andrithz
+            a(href="news.html")
+              .articles__item 
+                img(src="images/article-1.webp", alt="").articles__item__img
+                p.articles__item__p Рабочее колесо насоса ANDRITZ
+            a(href="news.html")
+              .articles__item 
+                img(src="images/article-2.webp", alt="").articles__item__img
+                p.articles__item__p Новая информация про центробежные насосы Andrithz
+            a(href="news.html")
+              .articles__item 
+                img(src="images/article-3.webp", alt="").articles__item__img
+                p.articles__item__p Новая информация про измельчители Boerger
+            a(href="news.html")
+              .articles__item 
+                img(src="images/article-4.webp", alt="").articles__item__img
+                p.articles__item__p Новая информация про центробежные насосы Andrithz
       .articles__pagination
         include components/pagination.pug
         +pagination
