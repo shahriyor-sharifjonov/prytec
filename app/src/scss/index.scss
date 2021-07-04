@@ -2950,4 +2950,330 @@ a{
       }
     }
   }
+
+  &__items{
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+    @include media($lg){
+      margin-bottom: 0;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #4F4F4F;
+    height: max-content;
+    max-width: 614px;
+    cursor: pointer;
+
+    @include media($lg){
+      margin-bottom: 200px;
+      margin-top: 100px;
+    }
+    @include media($md){
+      height: 400px;
+    }
+
+    &__img{
+      margin-top: -25%;
+      filter: grayscale(100%);
+      max-width: 100%;
+      width: 80%;
+
+      @include media($lg){
+        margin-top: -30%;
+      }
+    }
+
+    &__title{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #828282;
+    }
+
+    &__desc{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #828282;
+    }
+
+    &__content{
+      padding-left: 50px;
+      padding-bottom: 25px;
+
+      @include media($lg){
+        padding-left: 15px;
+      }
+    }
+
+    &.current{
+      background: #9E9DCB;
+
+      img{
+        filter: none;
+      }
+
+      h1{
+        color: #F2F2F2;
+      }
+
+      p{
+        color: #F2F2F2;
+      }
+    }
+  }
+
+  &__dynamic{
+
+    &__item{
+      background: #FFFFFF;
+      border: 1px solid rgba(1, 0, 47, 0.1);
+      box-sizing: border-box;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column; 
+      min-height: 571px;
+
+      &__title{
+        font-family: 'Proxima Nova', 'formular';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #4F4F4F;
+        margin-top: 22px;
+        margin-left: 100px;
+
+        @include media($xl){
+          margin-left: 10px;
+        }
+      }
+
+      &__img{
+        margin: 50px auto 17px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__bg{
+    background: url(../images/service-bg.webp) top / cover no-repeat;
+    margin-bottom: -60px;
+  }
+
+  &__advantages{
+    background: none;
+    margin-top: 100px;
+  }
+}
+
+.shredder{
+
+  &__cards{
+    padding-bottom: 197px;
+    justify-content: space-between;
+
+    
+    @include media($xl){
+      padding-bottom: 147px;
+    }
+  }
+
+  &__card{
+    background: linear-gradient(102.89deg, rgba(51, 51, 51, 0.4) 4.01%, rgba(51, 51, 51, 0.4) 4.02%, rgba(0, 0, 0, 0.2) 78.63%);
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    max-width: 600px;
+    width: 100%;
+    height: 317px;
+
+    @include media($xl){
+      margin-bottom: 50px;
+    }
+
+    &__title{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 120%;
+      display: flex;
+      align-items: center;
+      color: #F2F2F2;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-left: 60px;
+
+      @include media($xl){
+        margin-left: 10px;
+      }
+      @include media($md){
+        font-size: 24px;
+      }
+    }
+
+    &__desc{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: #F2F2F2;
+      margin-bottom: 50px;
+      margin-left: 60px;
+
+      @include media($xl){
+        margin-left: 10px;
+      }
+    }
+
+    &__btn{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 26px;  
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: #333;
+      background: #FFC466;
+      border-radius: 3px;
+      max-width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 60px;
+
+      @include media($xl){
+        margin-left: 10px;
+      }
+    }
+
+    &.current{
+
+      a{
+        background: #A6718F;
+        color: #FFC466;
+      }
+    }
+  }
+
+  &__video{
+
+    &__title{
+      font-family: 'Proxima Nova', 'formular';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 48px;
+      /* identical to box height, or 160% */
+      
+      display: flex;
+      align-items: center;
+      text-align: center;
+      
+      /* gr */
+      
+      color: #333333;
+    }
+
+    &__item{
+      width: 100%;
+      height: 500px;
+      background: #4F4F4F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFC466;
+      margin-top: 50px;
+      margin-bottom: 200px;
+
+      i{
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+.multicrusher{
+
+  &__series{
+    margin-bottom: 200px;
+    margin-top: 200px;
+
+    &__item{
+      border: 1px solid rgba(158,	157,	203, 0.2);
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 8px 15px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include media($lg){
+        margin-bottom: 25px;
+      }
+    }
+    
+    &__img{
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 17px;
+    }
+
+    &__title{
+      font-family: Proxima Nova, Formular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #4F4F4F;
+      margin-bottom: 25px;
+    }
+
+    &__btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #A6718F;
+      box-sizing: border-box;
+      border-radius: 3px;
+      padding: 20px 40px;
+      color:#A6718F;
+
+      i{
+        margin-right: 8px;
+      }
+
+      p{
+        font-family: Proxima Nova, Formular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 26px;
+        /* identical to box height, or 221% */
+        
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        
+        /* /red */
+        
+        color: #A6718F; 
+      }
+    }
+  }
 }

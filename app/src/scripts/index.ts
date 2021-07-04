@@ -123,3 +123,5 @@ fourth.addEventListener('click', ()=>{
   firstDownload.classList.remove('current');
   cartTitle.innerText = "ПРИМЕРЫ ЭКСПЛУАТАЦИИ VPM";
 });
+
+

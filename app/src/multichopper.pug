@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   include components/head.pug
-  +head('Home')
+  +head('Shredder Multichopper')
   body 
     header.header
       include components/header.pug
@@ -22,6 +22,49 @@ html(lang="en")
               p Габариты
         .col-12.col-lg-4.multichopper__right
           img(src="images/shredder-1.webp", alt="").multichopper__img
+    .multichopper__items.row.container   
+      .col-12.col-lg-6.multichopper__item.multichopper__first
+        img(src="images/multichopper-1.webp", alt="").multichopper__item__img
+        .multichopper__item__content  
+          h1.multichopper__item__title MULTICHOPPER PLUS
+          p.multichopper__item__desc ИЗМЕЛЬЧИТЕЛЬ С ПЕРФОРИРОВАННЫМ ДИСКОМ И ЕМКОСТЬЮ ДЛЯ НЕИЗМЕЛЬЧЕННЫХ МЕХАНИЧЕСКИХ ПРИМЕСЕЙ.
+      .col-12.col-lg-6.multichopper__item.current.multichopper__second
+        img(src="images/multichopper-2.webp", alt="").multichopper__item__img
+        .multichopper__item__content  
+          h1.multichopper__item__title MULTICHOPPER PURE
+          p.multichopper__item__desc ИЗМЕЛЬЧИТЕЛЬ С ПЕРФОРИРОВАННЫМ ДИСКОМ БЕЗ ЕМКОСТИ ДЛЯ НЕИЗМЕЛЬЧЕННЫХ МЕХАНИЧЕСКИХ ПРИМЕСЕЙ. ОН РАЗРАБОТАН ТАКИМ ОБРАЗОМ, ЧТО В НЕМ НЕТ ЧАСТЕЙ, ГДЕ  МОГ БЫ НАКАПЛИВАТЬСЯ ОСАДОК.
+    .multichopper__bg  
+      .multichopper__dynamic 
+        .multichopper__dynamic__item.container
+          h1.multichopper__dynamic__item__title Рабочие характеристики
+          .multichopper__dynamic__item__img
+      .pump__advantages.multichopper__advantages
+        .container
+          h1.title.pump__advantages__title ПРЕИМУЩЕСТВА
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Компактность и возможность менять направление потока перерабатываемой среды делают измельчитель Multichopper универсальным.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Разнообразие исполнений и типоразмеров, а так же широкий ассортимент дополнительного оборудования дают возможность использовать измельчитель Multichopper для выполнения конкретно Ваших задач.
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Измельчитель Multichopper может быть оборудован автоматическим узлом настройки прижимного усилия MCA (англ. Mechanical Cut Adjustment). Для данного измельчителя предложены различные комбинации дисков с ножами, что обеспечивает широкий диапазон измельчения.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Измельчитель Multichopper очень удобен в обслуживании, в принципе как и все оборудование фирмы Börger. Благодаря конструкции "сервис на месте" (MIP), все детали легко можно заменить своими силами не снимая его с линии.
+      .shredder__cards.row.container
+        .col-12.col-xl-6.shredder__card.current 
+          h1.shredder__card__title ПРИМЕНЕНИЕ
+          p.shredder__card__desc Ознакомтесь с информацией о правилах применения и технических особенностях продукции
+          a(href="#!").shredder__card__btn Ознакомиться
+        .col-12.col-xl-6.shredder__card
+          h1.shredder__card__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+          p.shredder__card__desc Узнайте подробнее о среде использования продукции из каталога
+          a(href="#!").shredder__card__btn Ознакомиться
+    .shredder__video.container
+      h1.shredder__video__title Техническое обслуживание
+      .shredder__video__item 
+        i.far.fa-play-circle
+    script(src="scripts/multichopper.js") 
     .footer__els.container
       .footer__els__first
       .footer__els__second      

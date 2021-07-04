@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Shredder Multicrusher')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+    .multichopper__intro#top
+      .multichopper__intro__category.container 
+        a(href="shredders.html").pump__product-intro__category__handler Измельчители BÖRGER /
+        a(href="#!").pump__product-intro__category__current.multichopper__intro__category__current Измелчитель MULTICRUSHER
+      .container.row 
+        .col-12.col-lg-8.multichopper__left
+          h1.title.multichopper__title Измельчитель MULTICRUSHER
+          p.multichopper__p Производительность до 400 м³/ч
+          .multichopper__btns 
+            a(href="contact.html").multichopper__btn.current Cвязаться с нами
+            a(href="#!").multichopper__btn скачать каталог  
+        .col-12.col-lg-4.multichopper__right
+          img(src="images/shredder-2.webp", alt="").multichopper__img
+    .multichopper__bg  
+      .multicrusher__series.container.row 
+        .col-12.col-md-6.col-lg-3
+          .multicrusher__series__item 
+            img(src="images/serie-hal.webp", alt="").multicrusher__series__img
+            h1.multicrusher__series__title СЕРИЯ HAL
+            a(href="#!").multicrusher__series__btn
+                i.far.fa-file
+                p Габариты
+        .col-12.col-md-6.col-lg-3
+          .multicrusher__series__item 
+            img(src="images/serie-hpl.webp", alt="").multicrusher__series__img
+            h1.multicrusher__series__title СЕРИЯ HPL
+            a(href="#!").multicrusher__series__btn
+                i.far.fa-file
+                p Габариты
+        .col-12.col-md-6.col-lg-3
+          .multicrusher__series__item 
+            img(src="images/serie-hcl.webp", alt="").multicrusher__series__img
+            h1.multicrusher__series__title СЕРИЯ HCL
+            a(href="#!").multicrusher__series__btn
+                i.far.fa-file
+                p Габариты
+        .col-12.col-md-6.col-lg-3
+          .multicrusher__series__item 
+            img(src="images/serie-hfl.webp", alt="").multicrusher__series__img
+            h1.multicrusher__series__title СЕРИЯ HFL
+            a(href="#!").multicrusher__series__btn
+                i.far.fa-file
+                p Габариты
+      .pump__advantages.multichopper__advantages
+        .container
+          h1.title.pump__advantages__title ПРЕИМУЩЕСТВА
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Превосходный режущий эффект и эффект самоочистки ножевых пластин достигаются разной скоростью вращения валов.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Широкий выбор типоразмеров, различные комбинации режущих дисков и оптимальная частота оборотов позволяют подобрать подходящий измельчитель для выполнения практически любой задачи.
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p  Разнообразие материалов, не поддающихся коррозии, позволяют применять измельчитель Multicrusher даже в работе с морской водой. Конструкция измельчителя полностью зависит от стоящей перед ним задачи. 
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p В зависимости от потребностей клиента измельчитель может быть смонтирован на мобильный агрегат или работать вместе с насосом в погружном исполнении. Измельчитель Multicrusher так же универсален, как и задачи, которые он выполняет.
+      .shredder__cards.row.container
+        .col-12.col-xl-6.shredder__card.current 
+          h1.shredder__card__title ПРИМЕНЕНИЕ
+          p.shredder__card__desc Ознакомтесь с информацией о правилах применения и технических особенностях продукции
+          a(href="#!").shredder__card__btn Ознакомиться
+        .col-12.col-xl-6.shredder__card
+          h1.shredder__card__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+          p.shredder__card__desc Узнайте подробнее о среде использования продукции из каталога
+          a(href="#!").shredder__card__btn Ознакомиться
+    .shredder__video.container
+      h1.shredder__video__title Техническое обслуживание
+      .shredder__video__item 
+        i.far.fa-play-circle
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second      
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')
