@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Krany')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+    .multichopper__intro#top.seals__intro
+      .multichopper__intro__category.container 
+        a(href="components.html").pump__product-intro__category__handler Комплектующие /
+        a(href="#!").pump__product-intro__category__current.multichopper__intro__category__current Шаровые краны
+      .container.row 
+        .col-12.col-lg-8.multichopper__left
+          h1.title.multichopper__title Шаровые Краны Pekos
+          .multichopper__btns 
+            a(href="contact.html").multichopper__btn.current Cвязаться с нами
+        .col-12.col-lg-4.multichopper__right
+          img(src="images/component-3.webp", alt="").multichopper__img
+    .multichopper__bg 
+      .pump__advantages.multichopper__advantages
+        .container
+          h1.title.pump__advantages__title ПРЕИМУЩЕСТВА
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Трехходовые и Четырехходовые
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Трехходовые и  четырехходовые шаровые краны  Pekos  в системах водоснабжения, химической, нефтехимической, пищевой, целлюлозно-бумажной, горнодобывающей, сталелитейной промышленности, в паровых и пароконденсатных системах.
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Краны шаровые Pekos в криогенном исполнении
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Шаровой кран низкотемпературного (хладостойкого) исполнения  предназначен для работы на следующих рабочих средах: сжжиженые газы: жидкий азот, жидкий кислород и т.д.
+          .pump__advantages__row.row.abaque__advantages__row.krany__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Краны Pekos имеют фланцевый тип соединения. Конструкция делает установку и разборку крана максимально простыми.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+      .shredder__cards.row.container
+        .col-12.col-xl-6.shredder__card.current 
+          h1.shredder__card__title ПРИМЕНЕНИЕ
+          p.shredder__card__desc Ознакомтесь с информацией о правилах применения и технических особенностях продукции
+          a(href="#!").shredder__card__btn Ознакомиться
+        .col-12.col-xl-6.shredder__card
+          h1.shredder__card__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+          p.shredder__card__desc Узнайте подробнее о среде использования продукции из каталога
+          a(href="#!").shredder__card__btn Ознакомиться
+              
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second      
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')
