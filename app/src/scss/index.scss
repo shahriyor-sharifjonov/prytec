@@ -3476,4 +3476,43 @@ a{
       }
     }
   }
+
+  &__category{
+    margin-top: 100px;
+
+    &__content{
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+
+      @include media(1200){
+        flex-wrap: wrap;
+      }
+    }
+
+    &__title{
+      margin-bottom: 50px;
+    }
+
+    &__item{
+      border: 0.5px solid #333333;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-family: 'Proxima Nova', Formular;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 30px;
+      text-align: center;
+      color: #4F4F4F;
+      margin: 5px;
+      cursor: pointer;
+
+      &.current{
+        background: #9E9DCB;
+        color: #FFC466;
+        border: 0.5px solid #9E9DCB;
+      }
+    }
+  }
 }
