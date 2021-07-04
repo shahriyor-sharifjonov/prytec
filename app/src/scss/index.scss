@@ -3466,11 +3466,16 @@ a{
     &__yellow{
       background: #FFC466;
 
+      @include media($lg){
+        height: max-content;
+      }
+
       &__p{
         padding-bottom: 55px;
 
         @include media(992){
-          margin-bottom: 0;
+          margin-top: 25px;
+          margin-bottom: 25px;
           padding-bottom: 0;
         }
       }
@@ -3483,6 +3488,7 @@ a{
     &__content{
       flex-wrap: nowrap;
       margin-bottom: 50px;
+      justify-content: center;
 
       @include media(1200){
         flex-wrap: wrap;
@@ -3502,17 +3508,101 @@ a{
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      padding: 30px;
+      padding: 15px;
       text-align: center;
       color: #4F4F4F;
       margin: 5px;
       cursor: pointer;
+      max-width: 200px;
 
       &.current{
         background: #9E9DCB;
         color: #FFC466;
         border: 0.5px solid #9E9DCB;
       }
+
+      &__p{
+
+        margin-bottom: 0;
+      }
     }
+  }
+
+  &__dynamic{
+    padding-bottom: 100px;
+  }
+
+  &__video{
+    background: linear-gradient(108.67deg, #BCB2A2 8.93%, #9F5A79 49.19%, #266195 95.8%);
+  }
+
+  &__text{
+
+    &__p{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 35px;
+      color: #4F4F4F;
+    }
+  }
+
+  &__lineup{
+
+    &__title{
+      margin-top: 100px;
+    }
+
+    &__item{
+
+      &__title{
+        color: #FFC466;
+      }
+    }
+
+    &__rows{
+
+      &__title{
+        max-width: max-content;
+      }
+    }
+  }
+
+  &__bottom{
+    align-items: center;
+    margin-bottom: 100px;
+
+    [class*="col"]{
+      @include media($lg){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__img{
+      max-width: 100%;
+
+      @include media($lg){
+        margin-bottom: 50px;
+      }
+    }
+
+    &__p{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 35px;
+      color: #4F4F4F;
+    }
+  }
+}
+
+.seals__lineup__item.dn {
+
+  @include media($lg){
+    display: none;
   }
 }

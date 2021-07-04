@@ -1,7 +1,12 @@
 doctype html
 html(lang="en")
-  include components/head.pug
-  +head('Borger')
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title #{page} Page | PRYTEC
+  link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC", crossorigin="anonymous")
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+  link(rel="stylesheet", href="styles/index.css")
   body 
     header.header
       include components/header.pug
@@ -40,6 +45,112 @@ html(lang="en")
           .col-12.col-xl-2.blueline__category__item.blueline-6
             p.blueline__category__item__p СЕРИЯ BLUELINE ТИП XL
         .blueline__dynamic
+
+        .shredder__video.container
+          h1.shredder__video__title Особенности конструкции
+          .shredder__video__item.blueline__video 
+            i.far.fa-play-circle
+        
+        .blueline__text
+          h1.blueline__text__title.title Разнообразие роторов
+          p.blueline__text__p В настоящий момент компания Бёргер предлагает 21 типоразмер насосов серии  BLUEline. В зависимости от типоразмера, для каждого насоса можно подобрать до 8 различных роторов  с разной геометрией (двухлопастные и трехлопастные) и из различных материалов. Благодаря своей конструкции, сердечник ротора и валы не соприкасаются с перекачиваемой средой. При подборе оптимального варианта ротора всегда учитываются требования заказчика. 
+          p.blueline__text__p Любой из роторов может быть установлен в любой насос с подходящим типоразмером, вне зависимости от того, как давно эксплуатируется насос — 20 лет или год.
+        
+        h1.title.blueline__lineup__title.blueline__lineup__rows__title Двухлопастные роторы
+        .row.andritz__lineup.mouvex__lineup.blueline__lineup <!--Andritz Item ROW Start 1 - ITEM-->  
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item <!--Andritz Item Start 1 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-1.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный ротор
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный ротор
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Универсальный ротор Полностью обрезиненный для агрессивных и абразивных сред
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-2.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Винтовой ротор Optimum
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Винтовой ротор Optimum
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Обширная плотная поверхность с эффективной трущей кромкой Предназначен для агрессивных и абразивных сред Обеспечивает постоянное давление и равномерную перекачку
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-3.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный ротор Premium PFA
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный ротор Premium PFA
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Большая уплотняющая поверхность с эффективной трущей кромкой тефлоновое покрытие сердечник не соприкасается  перекачиваемой средой 
+        .row.andritz__lineup.mouvex__lineup.blueline__lineup <!--Andritz Item ROW Start 1 - ITEM-->  
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item <!--Andritz Item Start 1 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-4.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный ротор Premium
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный ротор
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Для высоковязких абразивных сред из твердых сплавов, нержавеющей стали или полимеров
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-5.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный ротор Premium
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Винтовой ротор Optimum
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Роторы для биогазовых установок имеют неограниченный срок службы на роторе образуется уплотняющий налет из возобновляемого сырья
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-6.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный ротор Оrbite
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный ротор Premium PFA
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Ротор из стали или нержавеющей стали низкая кавитация отсутствие зажатия твердых частиц
+
+        h1.title.blueline__lineup__title.blueline__lineup__rows__title Двухлопастные роторы
+        .row.andritz__lineup.mouvex__lineup.blueline__lineup <!--Andritz Item ROW Start 1 - ITEM-->  
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item <!--Andritz Item Start 1 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-7.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Винтовой ротор
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Винтовой ротор
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Универсальный ротор Полностью обрезиненный для агрессивных и абразивных сред
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-8.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Винтовой ротор Optimum
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Винтовой ротор Optimum
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Обширная плотная поверхность с эффективной трущей кромкой Предназначен для агрессивных и абразивных сред Обеспечивает постоянное давление и равномерную перекачку
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-9.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Винтовой ротор Unique со съемными наконечниками
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Винтовой ротор Unique со съемными наконечниками
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Большая уплотняющая поверхность с эффективной трущей кромкой тефлоновое покрытие сердечник не соприкасается  перекачиваемой средой 
+        .row.andritz__lineup.mouvex__lineup.blueline__lineup <!--Andritz Item ROW Start 1 - ITEM-->  
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item <!--Andritz Item Start 1 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-10.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный техлопастной ротор
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный техлопастной ротор
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Для высоковязких абразивных сред из твердых сплавов, нержавеющей стали или полимеров
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+            .andritz__lineup__item__visible
+              img(src="images/blue-11.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+              p.andritz__lineup__item__visible__p.blueline__lineup__item__title Линейный техлопастной ротор
+            .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+              p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title Линейный техлопастной ротор
+              p.mouvex__hidden__item__p.seals__lineup__hidden__p Роторы для биогазовых установок имеют неограниченный срок службы на роторе образуется уплотняющий налет из возобновляемого сырья
+          .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item.dn <!--Andritz Item Start 2 - ITEM-->
+        
+        h1.title.blueline__lineup__title.blueline__lineup__rows__title Крышка с предохранительным клапаном
+        .row.blueline__bottom 
+          .col-12.col-lg-4
+            img(src="images/blue-12.webp", alt="").blueline__bottom__img
+          .col-12.col-lg-8 
+            p.blueline__bottom__p Для избежания избыточного давления в камере насоса, производитель роторно-лопастных насосов Бергер, предлагает использовать крышку с предохранительным клапаном.
+            p.blueline__bottom__p Из-за рабочего давления насоса возникает давление на крышку насоса, которая состоит из внешнего кольца и внутренней подпружиненной пластины. Пока сила давления пружины больше, чем рабочее давление насоса, пластина остается в закрывающей позиции. Если рабочее давление насоса превышает настраиваемую силу давления пружины, пластина сдвигается вдоль по оси насоса, что приводит к возникновению щели и обратному току перекачиваемой среды к всасывающему патрубку. При понижении рабочего давления щель снова закрывается.
+            p.blueline__bottom__p Благодаря мембране, крышка с предохранительным клапаном полностью герметична, а подвижные части не соприкасаются со средой.
+            
 
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js") 
