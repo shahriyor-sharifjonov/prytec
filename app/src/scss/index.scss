@@ -3439,3 +3439,41 @@ a{
     display: none;
   }
 }
+
+.blueline{
+
+  &__intro{
+
+    &__mtdiv{
+      top: -315px;
+      bottom: 227px;
+    }
+
+    &__p{
+      color: #F2F2F2;
+      padding-bottom: 55px;
+      
+      @include media(992){
+        margin-bottom: 0;
+        padding-bottom: 55px;
+      }
+    }
+
+    &__red{
+      background: #A6718F;
+    }
+
+    &__yellow{
+      background: #FFC466;
+
+      &__p{
+        padding-bottom: 55px;
+
+        @include media(992){
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
