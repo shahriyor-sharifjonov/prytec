@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Shredder Rotorakke')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+    .rotorakke__intro.container#top 
+      .rotorakke__category 
+        a(href="shredders.html").rotorakke__category__handler Измельчители BÖRGER /
+        a(href="#!").rotorakke__category__current Измелчитель ROTORRAKE
+      .rotorakke__content.container
+        h1.title.shredder__title Измельчители ROTORRAKE
+        .row 
+          .col-12.col-lg-4.rotorakke__item__content
+            p.shredder__item__p ROTORRАСКЕ PURE
+            .rotorakke__item
+              img(src="images/shredder-3.webp", alt="").rotorakke__item__img
+          .col-12.col-lg-4.rotorakke__item__content
+            p.shredder__item__p ROTORRAKE ПЛЮС 16
+            .rotorakke__item
+              img(src="images/shredder-3.webp", alt="").rotorakke__item__img
+          .col-12.col-lg-4.rotorakke__item__content
+            p.shredder__item__p ROTORRAKE ПЛЮС 150
+            .rotorakke__item
+              img(src="images/rotorakke.webp", alt="").rotorakke__item__img
+    .multichopper__bg 
+      .pump__advantages.multichopper__advantages
+        .container
+          h1.title.pump__advantages__title ПРЕИМУЩЕСТВА
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Измельчитель Rotorrake перерабатывает даже самые грубые твердые включения и волокнистые образования, с которыми другие измельчители не справляются. Измельчитель изготавливается с учетом требований необходимых для выполнения конкретной задачи.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Измельчитель Rotorrake фирмы Börger (Бергер) можно приспособить для выполнения любых задач. Например, его можно установить в производственную линию и тогда он будет работать стационарно. 
+          .pump__advantages__row.row.abaque__advantages__row
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Если измельчитель вместе с насосом установить на прицеп, то это уже будет мобильный агрегат. Чтобы получить доступ к рабочим органам измельчителя, нужно всего лишь снять быстросъемную крышку и открутить центральный болт.
+            .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+              p.pump__advantages__item__p Измельчитель Rotorrake сконструирован по принципу обслуживание на месте. Он также удобен и прост в обслуживании, как и все оборудование, изготовленное фирмой Börger.
+      .shredder__cards.row.container
+        .col-12.col-xl-6.shredder__card.current 
+          h1.shredder__card__title ПРИМЕНЕНИЕ
+          p.shredder__card__desc Ознакомтесь с информацией о правилах применения и технических особенностях продукции
+          a(href="#!").shredder__card__btn Ознакомиться
+        .col-12.col-xl-6.shredder__card
+          h1.shredder__card__title ПРИМЕРЫ ЭКСПЛУАТАЦИИ
+          p.shredder__card__desc Узнайте подробнее о среде использования продукции из каталога
+          a(href="#!").shredder__card__btn Ознакомиться
+      .shredder__video.container
+        h1.shredder__video__title Техническое обслуживание
+        .shredder__video__item 
+          i.far.fa-play-circle
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second      
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')

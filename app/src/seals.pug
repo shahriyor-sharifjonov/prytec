@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Shredder Multichopper')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+    .multichopper__intro#top.seals__intro
+      .multichopper__intro__category.container 
+        a(href="components.html").pump__product-intro__category__handler Комплектующие /
+        a(href="#!").pump__product-intro__category__current.multichopper__intro__category__current Уплотнение
+      .container.row 
+        .col-12.col-lg-8.multichopper__left
+          h1.title.multichopper__title Механические Уплотнение Chesterton
+          .multichopper__btns 
+            a(href="contact.html").multichopper__btn.current Cвязаться с нами
+            a(href="#!").multichopper__btn скачать каталог  
+        .col-12.col-lg-4.multichopper__right
+          img(src="images/seals.webp", alt="").multichopper__img

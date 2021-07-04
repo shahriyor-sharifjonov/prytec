@@ -3277,3 +3277,93 @@ a{
     }
   }
 }
+
+//rotorakke
+
+.rotorakke{
+
+  &__intro{
+    margin-top: 97px;
+  }
+
+  &__category{
+
+    &__handler{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 29px;
+      color: #FFC466;
+      margin-right: 5px;
+    }
+
+    &__current{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 29px;
+      color: #4F4F4F;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F2F2F2;
+    box-shadow: -2px -2px 15px rgba(255, 255, 255, 0.25), 2px 2px 15px rgba(221, 213, 213, 0.25);
+    border-radius: 6px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+
+    &__p{
+      margin-top: 15px;
+    }
+    
+    &:hover{
+      background: #FFC466;
+    }
+
+    &__img{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+//components
+
+.components{
+
+  &__intro{
+    margin-top: 117px;
+    margin-bottom: 100px;
+  }
+
+  &__item{
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 25px;
+
+    img{
+      max-height: 300px;
+      max-width: 100%;
+      width: max-content;
+    }
+
+    &:hover{
+      background: #9E9DCB;
+    }
+  }
+}
+
+.seals{
+
+  &__intro{
+    padding-bottom: 30px;
+  }
+}

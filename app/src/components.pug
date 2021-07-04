@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Components')
+  body 
+    header.header
+      include components/header.pug
+      +nav('home')
+    .components__intro.container
+        h1.title.shredder__title Комплектующие
+        .row 
+          .col-12.col-lg-4.rotorakke__item__content
+            a(href="seals.html").rotorakke__item.components__item
+              img(src="images/component-1.webp", alt="").rotorakke__item__img
+            p.shredder__item__p УПЛОТНЕНИЯ
+          .col-12.col-lg-4.rotorakke__item__content
+            a(href="mufty.html").rotorakke__item.components__item
+              img(src="images/component-2.webp", alt="").rotorakke__item__img
+            p.shredder__item__p МУФТЫ
+          .col-12.col-lg-4.rotorakke__item__content
+            a(href="krany.html").rotorakke__item.components__item
+              img(src="images/component-3.webp", alt="").rotorakke__item__img
+            p.shredder__item__p ШАРОВЫЕ КРАНЫ
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second      
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')
