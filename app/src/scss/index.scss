@@ -3682,3 +3682,151 @@ a{
     }
   }
 }
+
+.convertor{
+  margin-top: 97px;
+  margin-bottom: -120px;
+  padding-top: 100px;
+  padding-bottom: 220px;
+  background: url(../images/service-bg.webp) center / cover no-repeat;
+
+  &__title{
+    max-width: 720px;
+  }
+
+  &__content{
+    background: linear-gradient(102.89deg, rgba(51, 51, 51, 0.4) 4.01%, rgba(51, 51, 51, 0.4) 4.02%, rgba(51, 51, 51, 0.1) 78.63%);
+    backdrop-filter: blur(8px);
+    border-radius: 6px;
+    border: 1px solid linear-gradient(105.26deg, rgba(15, 76, 129, 0.4) 3.55%, rgba(188, 178, 162, 0) 27.51%, rgba(188, 178, 162, 0.1) 66.37%, rgba(124, 81, 100, 0.25) 80.37%);
+  }
+
+  &__list{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 15px; 
+  }
+
+  &__link{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFC466;
+    width: 226px;
+    height: 40px;
+    border: 0.5px solid #FFC466;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+    &.current{
+      background: #FFC466;
+      color: #4F4F4F;
+    }
+  }
+
+  &__form{
+    padding-top: 30px;
+
+    &__title{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 100%;
+      color: #F2F2F2;
+      padding-bottom: 15px;
+    }
+
+    &__input{
+      background: #F2F2F2;
+      border: 1px solid #FFC466;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 16px 25px;
+      width: 316px;
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #4F4F4F;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__radios{
+    display: flex;
+    flex-direction: column;
+
+    &__radio{
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      
+    }
+  }
+
+  &__radio{
+
+    &__button{
+      margin-right: 8px;
+      border: 1px solid #333333;
+      box-sizing: border-box;
+
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+  }
+
+  &__label{
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4F4F4F;
+    cursor: pointer;
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #FFC466;
+  box-sizing: border-box;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  &:after {
+    left: 1px;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+    background: #4F4F4F;
+    border-radius: 50%;
+    border: 1px solid #FFC466;
+    box-sizing: border-box;
+  }
+}

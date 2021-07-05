@@ -57,7 +57,7 @@ mixin footer__link(page, link, text)
     if page === link
       a(href="#!").footer__nav__link.current= text 
     else
-      a(href="pages" + "/"+link+".html").footer__nav__link= text  
+      a(href="/"+link+".html").footer__nav__link= text  
 
 mixin footer__nav(page)
   nav.footer__navbar.container 

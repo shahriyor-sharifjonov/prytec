@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Krany')
+  body
+    header.header
+      include components/header.pug
+      +nav('home')
+    .convertor
+      .container
+        h1.title.convertor__title У нас вы можете провести конвертацию многих величин
+        .convertor__content.row
+          .col-12.col-lg-3
+            ul.convertor__list 
+              li.convertor__link.current Производительность
+              li.convertor__link Вязкость
+              li.convertor__link Объем 
+              li.convertor__link Плотность
+              li.convertor__link Температура
+              li.convertor__link Длинна
+          .col-12.col-lg-4.convertor__form
+            p.convertor__form__title Исходная величина
+            input(type="text" value="1204").convertor__form__input
+            .convertor__radios 
+              .convertor__radios__radio
+                input(type="radio" id="a" name="radio1").convertor__radio__button
+                span.checkmark
+                label(for="a").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="b" name="radio1" checked="checked").convertor__radio__button
+                span.checkmark
+                label(for="b").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="c" name="radio1").convertor__radio__button
+                span.checkmark
+                label(for="c").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="d" name="radio1").convertor__radio__button
+                span.checkmark
+                label(for="d").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="e" name="radio1").convertor__radio__button
+                span.checkmark
+                label(for="e").convertor__label грамм на сантиметр в секунде
+              
+          .col-12.col-lg-4.convertor__form
+            p.convertor__form__title Преобразованная величина
+            input(type="text" value="233.5432").convertor__form__input
+            .convertor__radios 
+              .convertor__radios__radio
+                input(type="radio" id="f" name="radio2").convertor__radio__button
+                span.checkmark
+                label(for="f").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="g" name="radio2").convertor__radio__button
+                span.checkmark
+                label(for="g").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="l" name="radio2" checked="checked").convertor__radio__button
+                span.checkmark
+                label(for="l").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="m" name="radio2").convertor__radio__button
+                span.checkmark
+                label(for="m").convertor__label грамм на сантиметр в секунде
+              .convertor__radios__radio
+                input(type="radio" id="n" name="radio2").convertor__radio__button
+                span.checkmark
+                label(for="n").convertor__label грамм на сантиметр в секунде
+
+
+
+
+
+
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('home')
