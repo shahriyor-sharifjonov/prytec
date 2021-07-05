@@ -3606,3 +3606,79 @@ a{
     display: none;
   }
 }
+
+.onixline__btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onixline__btn{
+  font-family: Proxima Nova, formular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #A6718F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #A6718F;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 200px;
+  height: 60px;
+  margin: 0 15px 45px;
+
+  p{
+    margin-bottom: 0;
+    margin-left: 25px;
+  }
+}
+
+.onixline{
+
+  &__strange{
+    margin-bottom: 125px;
+
+
+    &__item{
+      margin-bottom: 25px;
+      
+      img{
+        max-width: 100%;
+        width: 100%;
+      }
+
+      p{
+        font-family: Proxima Nova, formular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #9E9DCB;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__items{
+    margin-bottom: 150px;
+
+    &__p{
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 35px;
+      color: #4F4F4F;
+      max-width: 930px;
+      
+      @include media($lg){
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

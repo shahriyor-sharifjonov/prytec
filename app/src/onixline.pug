@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Abaque')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="borger.html").pump__product-intro__category__handler Роторные насосы /
+          a(href="#!").pump__product-intro__category__current Серия Onixline
+        .container
+          h1.pump__product-intro__title Серия Onixline
+          p.pump__product-content__left__desc.blueline__intro__p Официальный дистрибьютор насосного оборудования Börger на территории Украины
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left.blueline__intro__red
+        p.pump__product-content__left__desc.blueline__intro__p Компания  Börger — это процветающая и динамично  развивающее  предприятие, которое начало свою работу еще в 1975 году и на сегодняшний день насчитывающее более чем 330 сотрудников. Главный офис находится в городе Боркен-Везеке, Германия. Основным направлением компании Бёргер  является производство роторно-лопастных насосов для  перекачки высоко вязкостной и абразивной среды.
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top.blueline__intro__mtdiv
+          .container
+            img(src="images/borger-2.webp", alt="pump borger").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.blueline__intro__yellow
+          p.pump__product-content__left__desc.blueline__intro__yellow__p Кроме того, фирма  Бёргер  выпускает широкий ассортимент других товаров, таких как измельчители, резервуары, мобильные насосы. При производстве оборудования компания Boerger соблюдает свои  основные принципы — объединяет износостойкость и простоту технического обслуживания. 
+    .blueline__category.container
+      h1.title.blueline__category__title Модельный ряд серии Blueline
+      .blueline__category__content.row 
+        .col-12.col-xl-2.blueline__category__item.onixline-1 
+          p.blueline__category__item__p СЕРИЯ ONIXLINE ТИП BJ090
+        .col-12.col-xl-2.blueline__category__item.onixline-2.current
+          p.blueline__category__item__p СЕРИЯ ONIXLINE ТИП BJ140
+        .col-12.col-xl-2.blueline__category__item.onixline-3
+          p.blueline__category__item__p СЕРИЯ ONIXLINE ТИП BL190
+        .col-12.col-xl-2.blueline__category__item.onixline-4
+          p.blueline__category__item__p СЕРИЯ ONIXLINE ТИП BL280
+    .onixline__btns
+      a(href="#!").onixline__btn
+        i.far.fa-file  
+        p Кривые
+      a(href="#!").onixline__btn 
+        i.far.fa-file  
+        p Габариты
+
+    .shredder__video.container
+      h1.shredder__video__title Особенности конструкции
+      .shredder__video__item.blueline__video 
+        i.far.fa-play-circle
+    .container
+      h1.title.onixline__strange__title.title Выбор механических уплотнений
+    .onixline__strange.row.container
+      .onixline__strange__item.col-12.col-lg-4
+        img(src="images/onixline-1.webp", alt="")
+        p FC CLASSIC ОДИНАРНОЕ МЕХАНИЧЕСКОЕ УПЛОТНЕНИЕ СО ВСТРОЕННОЙ ПРОМЕЖУТОЧНОЙ КАМЕРОЙ
+      .onixline__strange__item.col-12.col-lg-4
+        img(src="images/onixline-2.webp", alt="")
+        p FC SELECT ОДИНАРНОЕ МЕХАНИЧЕСКОЕ УПЛОТНЕНИЕ СО ВСТРОЕННОЙ ЗАПОРНОЙ КАМЕРОЙ
+      .onixline__strange__item.col-12.col-lg-4
+        img(src="images/onixline-3.webp", alt="")
+        p DA PROTECT ДВОЙНОЕ МЕХАНИЧЕСКОЕ УПЛОТНЕНИЕ СО ВСТРОЕННОЙ ПРОМЕЖУТОЧНОЙ КАМЕРОЙ
+    
+    .onixline__items.container
+      h1.title.onixline__items__title РОТОРЫ
+      p.onixline__items__p Ротор — это сердце насоса.  В зависимости от перекачиваемой среды компания Бёргер предлагает два типа роторов для насосов ONIXLine, а именно ротор Primus — двухлопастной винтовой ротор, ротор  Certus — двухлопастной линейный. Данные роторы могут быть изготовлены из нержавеющей стали (1.4404 или 1.4539), легированной 1.7225 или стали хастеллой.
+      .row.andritz__lineup.mouvex__lineup.blueline__lineup <!--Andritz Item ROW Start 1 - ITEM-->  
+        .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item <!--Andritz Item Start 1 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/onixline-4.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+            p.andritz__lineup__item__visible__p.blueline__lineup__item__title PRIMUS - Двухорпастной винтовой ротор
+          .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+            p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title PRIMUS - Двухорпастной винтовой ротор
+            p.mouvex__hidden__item__p.seals__lineup__hidden__p Исполнение из нержавеющей стали (1.404 или 1.4539), легированной стали 1.7225 или стали хастеллой.
+        .col-12.col-lg-4.andritz__lineup__item.seals__lineup__item  <!--Andritz Item Start 2 - ITEM-->
+          .andritz__lineup__item__visible
+            img(src="images/onixline-5.webp", alt="pump andritz").andritz__lineup__item__visible__img.seals__lineup__img
+            p.andritz__lineup__item__visible__p.blueline__lineup__item__title CERTUS - Двухорпастной линейный ротор
+          .mouvex__hidden__item.andritz__lineup__item__hidden.seals__lineup__hidden
+            p.mouvex__hidden__item__title.seals__lineup__hidden__title.blueline__lineup__item__title CERTUS - Двухорпастной линейный ротор
+            p.mouvex__hidden__item__p.seals__lineup__hidden__p исполнение из нержавеющей стали (1.4404 или 1.4539), легированной 1.7225 или стали хастеллой.
+
+    script(src="scripts/onixline.js") 
+    .footer__els.container
+      .footer__els__first
+      .footer__els__second
+    footer.footer 
+      include components/footer.pug 
+      +footer
+      .footer__nav
+        +footer__nav('about')
