@@ -14,10 +14,40 @@ html{
 
 body{
   background: #F2F2F2;
+  font-family: 'formular', sans-serif;
 }
 
 a{
   text-decoration: none;
+}
+
+.blueline__product__intro__title{
+  font-family: 'Proxima Nova', 'formular';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 120%;
+  color: #FFC466;
+  max-width: 435px;
+  width: 100%;
+  margin-top: 44px;
+  margin-left: 120px;
+  padding-bottom: 30px;
+
+  @include media($md){
+    font-size: 30px;
+    margin-left: 25px;
+    max-width: 400px;
+  }
+
+  @include media(440){
+    max-width: 300px;
+  }
+
+  @include media(370){
+    font-size: 24px;
+    max-width: 270px;
+  }
 }
 
 .header {
@@ -53,12 +83,15 @@ a{
   }
 
   &__nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
+
+    @include media($sm){
+      padding: 20px 20px;
+    }
   }
 
   &__list {
@@ -82,19 +115,25 @@ a{
       
       &.open{
         transform: translateX(0);
+        padding-left: 0;
+        margin-bottom: 0;
       }
     }
   }
 
   &__link {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.15;
-    letter-spacing: 0.15em;
     text-decoration: none;
     color: #343358;
     transition: 0.5s color;
     margin-right: 36px;
+    font-weight: 400;
     font-family: 'formular';
+    
+    @include media($lg){
+      font-size: 20px;
+    }
 
     &.dn{
       display: none;
@@ -345,7 +384,7 @@ a{
       width: 10px;
       height: 40px;
       right: 25px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -378,7 +417,7 @@ a{
       width: 10px;
       height: 40px;
       right: 45px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -391,7 +430,7 @@ a{
       width: 10px;
       height: 40px;
       right: 25px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -424,7 +463,7 @@ a{
       width: 10px;
       height: 40px;
       right: 25px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -438,7 +477,7 @@ a{
       width: 10px;
       height: 40px;
       right: 65px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -451,7 +490,7 @@ a{
       width: 10px;
       height: 40px;
       right: 45px;
-      bottom: -1.5px;
+      bottom: -1px;
 
       @include media($lg){
         display: none;
@@ -729,6 +768,7 @@ a{
       flex-direction: column;
       padding-top: 0px;
       padding-left: 15px;
+      align-items: start;
     }
   }
 
@@ -757,7 +797,6 @@ a{
         margin-right: 64px;
         color: #333;
         position: relative;
-        z-index: -1;
       }
     }
 
@@ -810,7 +849,7 @@ a{
 
 .service{
   padding-top: 127px;
-  background: url(../images/service-bg.webp) center / cover no-repeat;
+  background: url(../images/service-bg.webp) top / cover no-repeat;
   margin-bottom: -55px;
   padding-bottom: 100px;
 
@@ -923,6 +962,16 @@ a{
   }
 
   &__item{
+
+    &__abs{
+      position: absolute;
+      background: #4F4F4F;
+      width: 10px;
+      height: 50px;
+      right: 60px;
+      bottom: 0;
+      z-index: 1;
+    }
 
     &__with-img{
       margin-top: -116px;
@@ -1442,6 +1491,12 @@ a{
     transition: 300ms ease-in-out;
     cursor: pointer;
 
+    &__link{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &:hover{
       background: #FFC466;
     }
@@ -1478,6 +1533,10 @@ a{
       letter-spacing: 0.04em;
       color: #BDBDBD;
       transition: 300ms ease-in-out;
+
+      @include media($sm){
+        text-align: center;
+      }
     }
 
     &__title{
@@ -1581,10 +1640,13 @@ a{
       font-size: 18px;
       line-height: 29px;
       color: #333333;
-      margin: 30px 116px 0 0;
+      margin: 30px 221px 0 0;
 
-      @include media(1090){
-        margin: 30px 15px 0 0;
+      @include media(1400){
+        margin: 30px 130px 0 0;
+      }
+      @include media(1200){
+        margin: 30px 33px 0 0;
       }
       @include media($lg){
         margin: 55px 0;
@@ -1763,9 +1825,10 @@ a{
 //andritz
 
 .andritz__lineup{
+  font-family: 'Formular';
 
   &__totop{
-    font-family: 'formular';
+    font-family: 'Formular';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1804,17 +1867,17 @@ a{
     
 
     &:hover .andritz__lineup__item__hidden{
-      display: block;
+      opacity: 1;
 
       @include media($lg){
-        display: none;
+        opacity: 1;
       }
     }
     &:hover .andritz__lineup__item__visible{
-      display: none;
+      opacity: 0;
 
       @include media($lg){
-        display: block;
+        opacity: 1;
       }
     }
 
@@ -1836,6 +1899,8 @@ a{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      opacity: 1;
+      transition: 300ms;
 
       &__img{
         margin-top: -46%;
@@ -1850,7 +1915,7 @@ a{
     }
 
     &__hidden{
-      display: none;
+      opacity: 0;
       background: #4F4F4F;
       color: #fff;
       margin-top: -150px;
@@ -1858,6 +1923,8 @@ a{
       bottom: 0px;
       right: 15px;
       left: 15px;
+      min-height: 270px;
+      transition: 200ms;
 
       div{
         display: flex;
@@ -2306,7 +2373,7 @@ a{
   padding: 15px;
 
   &__title{
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     font-family: 'Proxima Nova', 'formular';
     font-style: normal;
     font-weight: 600;
@@ -2318,11 +2385,12 @@ a{
   &__p{
     font-family: 'Proxima Nova', 'formular';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1em;
-    color: #F2F2F2;
+    color: #f2f2f2;
+    margin: 9px 0;
   }
 }
 
@@ -2468,13 +2536,10 @@ a{
     width: 100%;
     background: #4F4F4F;
     backdrop-filter: blur(4px);
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
     padding-left: 30px;
     cursor: pointer;
     position: relative;
+    min-height: 270px;
 
 
     &:hover .teikoku__lineup__item__visible{
@@ -2518,13 +2583,11 @@ a{
       flex-direction: column;
       padding: 30px 30px 30px 30px;
       position: absolute;
-      top: auto;
-      left: 0;
+      bottom: 0px;
       right: 0;
-      bottom: 0;
-      transform: translateY(100%);
+      left: 0;
       background: #4F4F4F;
-
+      min-height: 270px;
 
       &__title{
         font-family: 'formular';
@@ -2541,9 +2604,8 @@ a{
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 18px;
-        text-transform: uppercase;
-        color: #F2F2F2;
+        line-height: 16px;
+        color: #f2f2f2;
         line-height: 29px;
       }
     }
@@ -2860,9 +2922,12 @@ a{
     align-items: center;
   }
 
+  &__left{
+  }
+
   &__right{
 
-    @include media($lg){
+    @include media($xl){
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -2890,8 +2955,9 @@ a{
 
   &__btns{
     display: flex;
+    align-items: start;
 
-    @include media($lg){
+    @include media($xl){
       flex-direction: column;
       align-items: start;
     }
@@ -2915,7 +2981,7 @@ a{
     border-radius: 3px;
     margin-left: 54px;
 
-    @include media($lg){
+    @include media($xl){
       margin-left: 0;
       margin-bottom: 15px;
       width: 230px;
@@ -2939,13 +3005,18 @@ a{
   }
 
   &__img{
-    max-width: 100%;
+    height: 347px;
+
+    @include media(1200){
+      max-width: 100%;
+      height: max-content;
+    }
   }
 
   &__intro{
     margin-top: 97px;
     background: #4F4F4F;
-    padding-bottom: 92px;
+    padding-bottom: 67px;
   
     &__category{
   
@@ -2957,7 +3028,7 @@ a{
 
   &__items{
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 280px;
     margin-bottom: 100px;
 
     @include media($lg){
@@ -2974,6 +3045,8 @@ a{
     height: max-content;
     max-width: 614px;
     cursor: pointer;
+    min-height: 300px;
+    height: 300px;
 
     @include media($lg){
       margin-bottom: 200px;
@@ -2984,13 +3057,16 @@ a{
     }
 
     &__img{
-      margin-top: -25%;
       filter: grayscale(100%);
-      max-width: 100%;
-      width: 80%;
+      height: 262px;
+      margin-top: -140px;
 
       @include media($lg){
         margin-top: -30%;
+      }
+      @include media(464){
+        max-width: 100%;
+        height: max-content;
       }
     }
 
@@ -3196,8 +3272,7 @@ a{
     }
 
     &__item{
-      width: 100%;
-      height: 500px;
+      aspect-ratio: 16 / 9;
       background: #4F4F4F;
       display: flex;
       align-items: center;
@@ -3256,7 +3331,8 @@ a{
       border: 1px solid #A6718F;
       box-sizing: border-box;
       border-radius: 3px;
-      padding: 20px 40px;
+      height: 60px;
+      width: 200px;
       color:#A6718F;
 
       i{
@@ -3322,6 +3398,11 @@ a{
     border-radius: 6px;
     transition: 200ms ease-in-out;
     cursor: pointer;
+    height: 329px;
+
+    @include media($lg){
+      height: max-content;
+    }
 
     &__p{
       margin-top: 15px;
@@ -3390,9 +3471,9 @@ a{
     }
 
     &__img{
-      height: 270px;
+      max-height: 270px;
       margin-top: -20%;
-      width: max-content;
+      width: min-content;
       
       @include media($lg){
         height: max-content;
@@ -3428,7 +3509,11 @@ a{
 
       img{
         max-width: 100%;
-        width: 100%;
+        width: 82%;
+
+        @include media($lg){
+          width: 100%;
+        }
       }
     }
   }
@@ -3736,6 +3821,10 @@ a{
   &__form{
     padding-top: 30px;
 
+    @include media($lg){
+      padding-bottom: 30px;
+    }
+
     &__title{
       font-family: Formular;
       font-style: normal;
@@ -3760,6 +3849,10 @@ a{
       line-height: 18px;
       color: #4F4F4F;
       padding-bottom: 15px;
+
+      @include media(340){
+        width: 290px;
+      }
     }
   }
 

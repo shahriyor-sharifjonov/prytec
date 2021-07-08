@@ -51,21 +51,19 @@ mixin footer()
         textarea(name="", cols="30", rows="10" placeholder="Напишите что-нибудь...").footer__form__input
         button(type="submit").footer__form__btn Отправить
     
-
-mixin footer__link(page, link, text)
-  li 
-    if page === link
-      a(href="#!").footer__nav__link.current= text 
-    else
-      a(href="/"+link+".html").footer__nav__link= text  
-
 mixin footer__nav(page)
   nav.footer__navbar.container 
     a(href="#!").footer__nav__logo
       img(src="images/logo-dark.webp" alt="Sparrow")
     ul.footer__list 
-      each item in [{link: 'service', text:'Сервис'},{link: 'news', text:'Новости'},{link: 'about', text:'О нас'},{link: 'contact', text:'Контакты'},{link: 'privacy', text:'Privacy policy'},{link: 'copyright', text:'Сopyright 2020'},]
-        +footer__link(page, item.link, item.text)  
+      div
+        a(href="service.html").footer__nav__link Сервис
+        a(href="news.html").footer__nav__link Новости
+        a(href="about.html").footer__nav__link О нас
+      div
+        a(href="contact.html").footer__nav__link Контакты
+        a(href="privacy.html").footer__nav__link Privacy policy
+        a(href="copyright.html").footer__nav__link Сopyright 2020
     .footer__nav__social
       a(href="https://facebook.com")
         i.fab.fa-facebook-square.footer__nav__social__i    

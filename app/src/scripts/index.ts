@@ -45,6 +45,8 @@ $('.slider__inner ').slick({
   slidesToScroll: 1,
   arrows: false,
   speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 992,

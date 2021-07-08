@@ -11,6 +11,10 @@ $sizes: (1320:$xxl,
   540:$sm,
   0:0);
 
+p{
+  margin-bottom: 0rem;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
