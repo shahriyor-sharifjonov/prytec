@@ -2543,11 +2543,11 @@ a{
 
 
     &:hover .teikoku__lineup__item__visible{
-      display: none;
+      opacity: 0;
     }
 
     &:hover .teikoku__lineup__item__hidden{
-      display: flex;
+      opacity: 1;
     }
 
 
@@ -2556,6 +2556,7 @@ a{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      transition: 200ms;
 
       &__title{
         font-family: 'formular';
@@ -2579,7 +2580,7 @@ a{
     }
 
     &__hidden{
-      display: none;
+      display: flex;
       flex-direction: column;
       padding: 30px 30px 30px 30px;
       position: absolute;
@@ -2588,6 +2589,8 @@ a{
       left: 0;
       background: #4F4F4F;
       min-height: 270px;
+      opacity: 0;
+      transition: 200ms;
 
       &__title{
         font-family: 'formular';
