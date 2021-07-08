@@ -2911,6 +2911,7 @@ a{
       align-items: center;
       justify-content: space-between;
       height: 100%;
+      padding-top: 15px;
     }
   }
 
@@ -3419,8 +3420,12 @@ a{
     }
 
     &__img{
-      max-width: 100%;
-      width: 100%;
+      height: 232px;
+
+      @include media($lg){
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
