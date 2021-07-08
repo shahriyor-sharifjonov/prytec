@@ -1679,6 +1679,9 @@ a{
       bottom: 174px;
       width: 100%;
       right:0;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
       
       @include media(992){
         position: static;
@@ -3522,6 +3525,10 @@ a{
   }
 }
 
+.onixline__product-content__right__top__img{
+  width: 499px;
+}
+
 .abaque__advantages__item.dn{
   @include media($lg){
     display: none;
@@ -3533,8 +3540,11 @@ a{
   &__intro{
 
     &__mtdiv{
-      top: -315px;
-      bottom: 227px;
+      top: -390px;
+      bottom: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__p{
@@ -3553,6 +3563,8 @@ a{
 
     &__yellow{
       background: #FFC466;
+      margin-top: 125px;
+      height: 250px;
 
       @include media($lg){
         height: max-content;
