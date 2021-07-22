@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Eccentric Mouvex Pump')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .pump__product-intro#top
+      .pump__product-intro__top 
+        .pump__product-intro__category.container 
+          a(href="pump.html").pump__product-intro__category__handler Насосы /
+          a(href="#!").pump__product-intro__category__current Шиберные насосы
+        .container
+          h1.pump__product-intro__title ШИБЕРНЫЕ НАСОСЫ BLACKMER
+    .pump__product-content.row 
+      .col-12.col-lg-6.pump__product-content__left
+        p.pump__product-content__left__desc Официальный дистрибьютор насосного оборудования Blackmer на территории Украины
+        img(src="images/blackmer-2.webp", alt="pump andritz").pump__product-content__left__img
+      .col-12.col-lg-6.pump__product-content__right 
+        .pump__product-content__right__top
+          img(src="images/blackmer-3.webp", alt="pump andritz").pump__product-content__right__top__img
+        .pump__product-content__right__bottom.mouvex__product-content__right__bottom
+          a(href="#!").pump__product-content__right__bottom__btn скачать каталог
+          a(href="contact.html").pump__product-content__right__bottom__btn.current Cвязаться с нами
+    .pump__advantages
+      .container
+        h1.title.pump__advantages__title Основные преимущества насосов Blackmer
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Шиберные насосы Серии HXL предназначены для перекачки жидкостей с широким диапазоном вязкостей и плотностей. Специально разработанные для тяжелых условий эксплуатации и непрерывной работы насосы способны выдерживать широкие тепловые изменения, гидроудары и другие значительные нагрузки.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Насосы оснащены сменными изнашиваемыми деталями, такими как шиберы, износостойкая гильза и торцевые диски, что позволяет легко восстановить насос до нового состояния, даже не снимая насос с трубопровода и предотвращая дорогостоящие простои.
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Три вида шиберов насоса HXL позволяют перекачивать жидкости с широким диапазоном вязкостей от 0,2 до 22.000 сСт, давая возможность одним насосом перекачивать например бензин и мазут или подсолнечное масло и мелассу. 
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Все модели HXL оснащаются предохранительными клапанами предназначенными для защиты насоса от избыточного давления. Версия с рубашкой обогрева доступна в 8-дюймовом размере. 
+        .pump__advantages__row.row.abaque__advantages__row
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Конструкция шиберных насосов и низкая скорость вращения вала позволяет насосам HXL продолжительно работать в сухом режиме без жидкости, в режиме самовсасывания с глубины до 7.7 метров, полностью извлекать продукт и очищать трубопроводы.
+          .col-12.col-lg-6.pump__advantages__item.abaque__advantages__item
+            p.pump__advantages__item__p Насосы HXL используются для широких областей применения для перекачки жидкостей в резервуарных парках хранения жидкостей, разгрузки барж, судов и железнодорожных составов, а также во многих других применениях.
