@@ -50,7 +50,22 @@ a{
   }
 }
 
-.header {
+.flag{    
+  font-size: 14px;
+  line-height: 1.15;
+  text-decoration: none;
+  color: #343358;
+  transition: 0.5s color;
+  margin-right: 36px;
+  font-weight: 400;
+  font-family: 'formular';
+
+  @include media($lg){
+    display: none;
+  }
+}
+
+.header{
   background: rgb(242, 242, 242);
   font-family: 'formular';
   border-bottom: 1px solid #BDBDBD;
@@ -70,7 +85,6 @@ a{
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    margin-left: 14px;
 
     @include media($lg){
       display: none;
@@ -3945,6 +3959,7 @@ a{
 }
 
 .ryad{
+  margin-bottom: 100px;
 
   &__line{
     display: flex;
