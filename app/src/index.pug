@@ -3,56 +3,56 @@ html(lang="en")
   include components/head.pug
   +head('Home')
   body 
-    header.header
-      include components/header.pug
-      +nav('home')
-    .intro 
-      img(src="images/intro.webp", alt="").intro__img
-      .intro__content 
-        .row.container
-          .col-12.col-lg-4.intro__content__left__side
-            p.intro__content__left__side__p Продажа, сервисное обслуживание, ремонт оборудования и комплектующих. 
-            a(href="pump.html").intro__content__left__side__btn Посмотреть каталог
-          .col-12.col-lg-8.intro__content__right__side
-            p.intro__content__right__side__p Насосное оборудование ведущих европейских производителей.
-        img(src="images/intro__content.webp", alt="").intro__content__bg
-    .slider.container
-      h1.title.slider__title Сотрудничество с крупными компаниями
-      .slider__inner 
-        .slider__item 
-          img(src="images/slider-1.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-2.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-3.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-4.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-5.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-6.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-7.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-8.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-9.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-10.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-11.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-12.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-13.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-14.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-15.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-16.webp", alt="").slider__item__img
-        .slider__item 
-          img(src="images/slider-17.webp", alt="").slider__item__img
+    #loading
+      script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
+      lottie-player(src="https://assets10.lottiefiles.com/packages/lf20_n0dsrudm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay)
+    .page
+      header.header
+        include components/header.pug
+        +nav('home')
+      .intro 
+        img(src="images/intro.webp", alt="").intro__img
+        .intro__content 
+          .row.container
+            .col-12.col-lg-4.intro__content__left__side
+              p.intro__content__left__side__p Продажа, сервисное обслуживание, ремонт оборудования и комплектующих. 
+              a(href="pump.html").intro__content__left__side__btn Посмотреть каталог
+            .col-12.col-lg-8.intro__content__right__side
+              p.intro__content__right__side__p Насосное оборудование ведущих европейских производителей.
+          img(src="images/intro__content.webp", alt="").intro__content__bg
+      .slider.container
+        h1.title.slider__title Сотрудничество с крупными компаниями
+        .slider__inner 
+          .slider__item 
+            img(src="images/slider-1.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-2.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-3.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-4.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-5.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-6.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-7.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-8.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-9.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-10.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-11.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-12.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-13.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-14.webp", alt="").slider__item__img
+          .slider__item 
+            img(src="images/slider-15.webp", alt="").slider__item__img
 
     .footer__els.container
       .footer__els__first
@@ -62,3 +62,4 @@ html(lang="en")
       +footer
       .footer__nav
         +footer__nav('home')
+        script(src="scripts/loading.js") 

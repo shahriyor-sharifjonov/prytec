@@ -522,6 +522,24 @@ a{
   }
 }
 
+.page{
+  display: flex;
+  flex-direction: column;
+}
+
+#loading{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider{
   margin-top: 100px;
   margin-bottom: 100px;
@@ -541,6 +559,16 @@ a{
     }
     @include media($md){
       font-size: 19px;
+    }
+  }
+
+  &__item__img{
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 200ms ease; 
+
+    &:hover{
+      filter: none;
     }
   }
 }
@@ -969,10 +997,15 @@ a{
   }
 
   &__title{
-    max-width: 276px;
+    max-width: 474px;
     width: 100%;
+    font-size: 56px;
     margin-top: 147px;
     margin-left: 20px;
+
+    @include media($md){
+      max-width: 100%;
+    }
   }
 
   &__item{
@@ -1018,7 +1051,9 @@ a{
       img{
         position: absolute;
         right: 0;
-        margin-left: -200px;
+        left: 0;
+        margin-left: -231px;
+        width: 130%;  
         z-index: -1;
         height: 100%;
         object-fit: cover;
@@ -1215,14 +1250,27 @@ a{
 
   &-row{
     width: 100%;
+
+    @include media($md){
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
   &__content{
     margin-bottom: 100px;
 
+    @include media($lg){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
     @include media($md){
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -1308,6 +1356,8 @@ a{
 
     @include media(768){
       flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
     }
 
     &::before{
@@ -1333,6 +1383,8 @@ a{
 
       @include media(768){
         margin-bottom: 30px;
+        margin-right: 0;
+        max-width: 375px;
       }
     }
 
@@ -1344,6 +1396,11 @@ a{
       line-height: 120%;
       color: #333333;
       max-width: 384px;
+      
+      @include media($md){
+        text-align: center;
+        font-size: 24px;
+      }
     }
   }
 
@@ -1356,7 +1413,11 @@ a{
     @include media(992){
       justify-content: center;
     }
-    
+
+    @include media($md){
+      padding: 0 0 50px;
+    }
+
     &__btns{
       @include media(992){
         display: none;
