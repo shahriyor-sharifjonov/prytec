@@ -1213,8 +1213,17 @@ a{
 
 .articles{
 
+  &-row{
+    width: 100%;
+  }
+
   &__content{
     margin-bottom: 100px;
+
+    @include media($md){
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title{
@@ -1333,7 +1342,7 @@ a{
       font-weight: 900;
       font-size: 30px;
       line-height: 120%;
-      color: #000000;
+      color: #333333;
       max-width: 384px;
     }
   }
