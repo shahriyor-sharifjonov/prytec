@@ -307,13 +307,6 @@ a{
         background: #FFC466;
         border-radius: 3px;
         transition: 200ms ease-in-out;
-
-
-        &:hover{
-          border: 1px solid #FFC466;
-          background: none;
-          color: #FFC466;
-        }
       }
     }
 
@@ -864,7 +857,7 @@ a{
 .service{
   padding-top: 127px;
   background: url(../images/service-bg.webp) top / cover no-repeat;
-  margin-bottom: -55px;
+  margin-bottom: -60px;
   padding-bottom: 100px;
 
   &__intro{
@@ -882,12 +875,19 @@ a{
 
     &__title{
       margin-top: 97px;
+      font-size: 56px;
+      max-width: 700px;
     }
 
     &__right__side{
       display: flex;
       flex-direction: column;
       align-items: start;
+      margin-top: 115px; 
+
+      @include media($lg){
+        margin-top: 0;
+      }
     }
 
     &__btn{
@@ -1285,6 +1285,8 @@ a{
       border-radius: 3px;
       margin: 12.5px 0;
       text-align: right;
+      max-width: 100%;
+      width: max-content;
     }
   }
 
