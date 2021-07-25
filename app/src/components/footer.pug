@@ -15,7 +15,7 @@ mixin footer()
         p.footer__item__title — EMAIl
           .row
             .col-4.footer__item__side
-              a(href="mailti:info@prytec.com.ua").footer__link info@prytec.com.ua
+              a(href="mailto:info@prytec.com.ua").footer__link info@prytec.com.ua
       .footer__item
         p.footer__item__title — Наши сайты
         .row   
@@ -31,13 +31,13 @@ mixin footer()
             .col-12.footer__item__side
               a(href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0+%D0%A2%D1%83%D0%BF%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0,+8,+%D0%9A%D0%B8%D0%B5%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,+03062/@50.4619851,30.394536,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cd3fc9d99c41:0xe41e32fc536a4110!8m2!3d50.4619817!4d30.3967247").footer__link Украина, 03062 г. Киев, ул. Туполева 8 оф. 22
     .col-12.col-lg-4.footer__right__side
-      form.footer__form(action="handler.php") 
+      form.footer__form(action="") 
         label(for="name").footer__item__title Полное имя 
-        input(type="text" id="name" placeholder="Андрей Иванович Чернов").footer__form__input
+        input(type="text" id="name" placeholder="Андрей Иванович Чернов" required).footer__form__input
         label(for="name").footer__item__title Email
-        input(type="text" id="name" placeholder="Андрей@gmail.com").footer__form__input
+        input(type="email" required id="name" placeholder="Андрей@gmail.com").footer__form__input
         label(for="name").footer__item__title Teлефон
-        input(type="text" id="name" placeholder="096 453 45 11").footer__form__input
+        input(type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="name" placeholder="096-453-45-11" required).footer__form__input
         .footer__checkbox__item
           input(type="checkbox", name="").footer__checkbox.icon
           p.footer__checkbox__p НАСОС
@@ -48,12 +48,12 @@ mixin footer()
           input(type="checkbox", name="").footer__checkbox.icon
           p.footer__checkbox__p Комплектующие
         label(for="name").footer__item__title.mt-1 СОобщение
-        textarea(name="", cols="30", rows="10" placeholder="Напишите что-нибудь...").footer__form__input
+        textarea(name="", cols="30", rows="10" placeholder="Напишите что-нибудь..." required).footer__form__input
         button(type="submit").footer__form__btn Отправить
     
 mixin footer__nav(page)
   nav.footer__navbar.container 
-    a(href="#!").footer__nav__logo
+    a(href="index.html").footer__nav__logo
       img(src="images/logo-dark.webp" alt="Sparrow")
     ul.footer__list 
       div
@@ -62,8 +62,8 @@ mixin footer__nav(page)
         a(href="about.html").footer__nav__link О нас
       div
         a(href="contact.html").footer__nav__link Контакты
-        a(href="privacy.html").footer__nav__link Privacy policy
-        a(href="copyright.html").footer__nav__link Сopyright 2021
+        a(href="#!").footer__nav__link Privacy policy
+        a(href="#!").footer__nav__link Сopyright 2021
     .footer__nav__social
       a(href="https://www.facebook.com/prytec.ua/" target="_blank")
         i.fab.fa-facebook-square.footer__nav__social__i    
