@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include components/head.pug
+  +head('Abaque')
+  body 
+    header.header
+      include components/header.pug
+      +nav('about')
+    .f404 
+      h1.f404__title К сожалению, мы не можем найти страницу которую вы искали
+      p.f404__p Но не переживайте, на сайте осталось много чего интересного
+      a(href="index.html").f404__btn На главную
+      img(src="images/404.webp", alt="404").f404__img
+
+    
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
+    script(src="scripts/slick.min.js") 
+    script(src="scripts/index.js") 

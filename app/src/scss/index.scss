@@ -1,4 +1,6 @@
 @import 'layout/root';
+@import 'layout/privacy';
+@import 'layout/404';
 @import 'layout/font';
 
 *{
@@ -10,11 +12,13 @@
 
 html{
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body{
   background: #F2F2F2;
   font-family: 'formular', sans-serif;
+  height: 100%;
 }
 
 a{
